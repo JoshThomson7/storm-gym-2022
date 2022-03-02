@@ -1,0 +1,79 @@
+/*
+ * Header part
+ *
+*/
+header.header { width: 100%; transition: all .4s ease; position: fixed; top: 0; z-index: 10; width: 100%; top: 0; left: 0;
+    @include breakpoint(papabear) { padding: 0; }
+
+    .header--site__wide__notice { padding: 10px 0; background: $primary; font-size: 13px; font-weight: 500; color: #fff; line-height: 19px;
+        a { color: $tertiary; font-weight: 700;}
+        .max__width { display: flex; justify-content: center;}
+    }
+
+    // Nav
+    @import './mega-menu';
+
+    .header__main { position: relative; padding: 15px 0;
+        @include breakpoint(cousinbear) { padding-top: 10px; }
+
+        .max__width { width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;
+            @include breakpoint(cousinbear) { padding: 0 20px; }
+            @include breakpoint(teenbear) { padding: 10px 20px; }
+        }
+
+        .header__main--left { display: flex; align-items: center;
+            @include breakpoint(teenbear) { flex: 2; }
+
+            .logo { width: 220px; transition: all .4s ease; margin-right: 20px;
+                @include breakpoint(grandpabear) { margin: 0; width: 170px;}
+                a { display: block; 
+                    svg { 
+                        .st0 { fill: #fff;}
+                    }
+                }
+            }
+
+        }
+
+        .header__main--right { display: flex; align-items: flex-start; justify-content: flex-end;
+
+            .header__actions {
+
+                ul { display: flex; align-items: center;
+
+                    li { display: flex; align-items: center; }
+
+                }
+            }
+
+        }
+
+        .burger__menu { display: none; margin-right: 20px;
+            @include breakpoint(grandpabear) { display: block; }
+
+            i { font-size: 30px; color: $tertiary;
+                @include breakpoint(teenbear) { font-size: 24px; }
+            }
+        }
+    }
+
+    &.sticky,
+    &.not-sticky { transition: all .3s ease;
+        .logo { width: 90px; transition: all .3s ease; }
+    }
+
+    &.sticky { top: 0; }
+    &.not-sticky { top: -150px; }
+
+    &.reset {
+        .logo { width: 125px; transition: all .3s ease;
+            @include breakpoint(papabear) { width: 70px; }
+        }
+    }
+}
+
+body.single-post { 
+    header.header {
+        background: $tertiary;
+    }
+}

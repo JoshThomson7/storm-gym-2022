@@ -1,0 +1,94 @@
+/*
+    Bluecoat - Press
+*/
+
+.fc_timeline { padding: 10px 20px;
+
+    .fc_timeline_wrapper {
+        .timeline__row { display: flex; justify-content: flex-start;
+            @include breakpoint(brotherbear) { margin-bottom: 0;
+                &:last-child { margin-bottom: 0;}
+            }
+
+            article { width: percentage(1/2); box-shadow: 2px 0 0 0 $lightgrey; display: flex; align-items: center;
+                @include breakpoint(brotherbear) { width: 100%; box-shadow: none;}
+
+                .timeline__caption { margin: 20px 0 20px 20px; width:75%; padding: 20px 20px 20px 60px; position: relative; background: #fff; box-shadow: 0 5px 20px rgba(black, 0.1); border-radius: 4px;
+                    @include breakpoint(brotherbear) { box-shadow: none; padding: 0 20px 20px; width: 100%; margin: 0; text-align: center;}
+
+                    i { width: 65px; height: 65px; background: $tertiary; box-shadow: -1px 0px 10px rgba(0,0,0,0.05); border-radius: 100%; display: flex; align-items: center; justify-content: center; font-size: 27px; color: $primary; position: absolute; top: -24.5px; left:-24.5px;
+                        @include breakpoint(brotherbear) { position: initial; margin: 0 auto 10px;}
+                    }
+
+                    h3 { font-size: 24px; margin-bottom: 10px;}
+                    p { font-size: 14px; line-height: 23px;}
+                }
+
+                .line { height: 2px; background: $lightgrey; position: relative; right: -30px; width: 15%;
+                    @include breakpoint(brotherbear) { display: none;}
+                }
+
+                figure { width: 40px; height: 40px; min-width: 40px; min-height: 40px; border-radius: 100%; background: $secondary; box-shadow: -1px 0px 10px rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; position: relative; right: -27px; font-size: 22px; padding: 3px 0px 0 0;
+                    @include breakpoint(grandpabear){right: -21px;}
+                    @include breakpoint(brotherbear) { display: none; box-shadow: none;}
+                }
+
+            }
+
+            &:nth-child(even) { justify-content: flex-end;
+                article { border: none; box-shadow: inset 2px 0 0 0 $lightgrey;
+                    @include breakpoint(brotherbear) { box-shadow: none;}
+
+                    .timeline__caption { order:3; margin: 20px 20px 20px 0; padding: 30px 70px 0px 35px;
+                        @include breakpoint(brotherbear) { box-shadow: 0; padding: 0 20px 20px; width: 100%; margin: 0; text-align: center;}
+
+                        i { left:auto; right: -24.5px;
+                            @include breakpoint(brotherbear) { margin: 0 auto 5px;}
+                        }
+                    }
+
+                    .line { order:2; right: auto; left: -18px;}
+                    figure { order:1; right: auto; left: -18px;}
+                }
+            }
+
+            &:first-child {
+                article { padding-top: 40px;}
+            }
+
+            &:last-child {
+                article { padding-bottom: 40px;
+                    @include breakpoint(brotherbear) { padding-bottom: 0; margin-bottom: 0;}
+                }
+            }
+        }
+    }
+
+    &.grey {
+        .fc_timeline_wrapper {
+            .timeline__row {
+                article { box-shadow: 4px 0 0 0 #fff;
+                    @include breakpoint(brotherbear) { box-shadow: none;}
+
+                    .timeline__caption { background: #fff; box-shadow: 22px 0 0 0 #fff;
+                        @include breakpoint(brotherbear) { box-shadow: none;}
+                    }
+                    .line { background: #fff;}
+                    figure { background:#fff; border: 4px #fff solid; box-shadow: 0 0 0 10px $lightgrey;
+                        @include breakpoint(brotherbear) { box-shadow: none;}
+                    }
+                }
+
+                &:nth-child(even) {
+                    article { box-shadow: inset 4px 0 0 0 #fff;
+                        @include breakpoint(brotherbear) { box-shadow: none;}
+
+                        .timeline__caption { box-shadow:-18px 0 0 0 #fff;
+                            @include breakpoint(brotherbear) { box-shadow: none;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

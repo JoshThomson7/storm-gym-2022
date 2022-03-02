@@ -1,0 +1,32 @@
+/*
+    Contact
+*/
+
+.fc_contact {
+
+    .fc_contact_wrapper { display: flex; align-items: center;
+        @include breakpoint(mamabear) { flex-direction: column;}
+
+        article { flex:1 0 auto;
+            @include breakpoint(mamabear) { width: 100%;}
+
+            ul { margin: 0; padding: 20px 0;
+                li { list-style: none; color: $primary; display: flex; font-size: 19px; font-weight: 300; align-items: center; line-height: 31px; padding-bottom: 20px;
+                    i { font-size: 31px; color: $tertiary; margin-right: 15px;}
+
+                    a { color: $primary;
+                        &:hover { color: $tertiary;}
+                    }
+
+                    &.address { align-items: flex-start; line-height: 23px;}
+                }
+            }
+
+            #map_single { height: 450px; border-radius: 10px;}
+
+            &.map { width: 60%; padding-left: 20px;
+                @include breakpoint(mamabear) { width: 100%; padding: 0}
+            }
+        }
+    }
+}

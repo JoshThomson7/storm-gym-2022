@@ -1,0 +1,19 @@
+/**
+* GF Field: Address
+*/
+
+.ginput_container_address { display: flex; flex-wrap: wrap;
+    @include breakpoint(sisterbear) { flex-direction: column;}
+
+    .address_zip { padding: 0 0 0 10px;}
+
+    span { display: block; width: 50%;
+        &:nth-child(odd) { padding-right: 10px;}
+        &:nth-child(even) { padding-left: 10px;}
+
+        @include breakpoint(sisterbear) { width: 100%;
+            &:nth-child(odd) { padding-right: 0;}
+            &:nth-child(even) { padding-left: 0;}
+        }
+    }
+}

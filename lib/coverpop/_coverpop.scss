@@ -1,0 +1,120 @@
+/* Styles for the CoverPop.js plugin */
+.CoverPop-open, 
+.CoverPop-open body { overflow: hidden;}
+
+#CoverPop-cover { 
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: all .4s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.CoverPop-open #CoverPop-cover { 
+	visibility: visible;
+	opacity: 1;
+	z-index: 99999;
+	transition: all .4s ease;
+
+	@include breakpoint(cousinbear) { align-items: flex-start; -ms-overflow-y:scroll; overflow-y:scroll; -webkit-overflow-scrolling:touch; padding: 40px 0;}
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade-in {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.splash { 
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#741f86+17,490957+17,1f193f+100&0.95+0,0.95+100 */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(73,9,87,0.95) 0%, rgba(73,9,87,0.95) 17%, rgba(31,25,63,0.95) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(73,9,87,0.95) 0%,rgba(73,9,87,0.95) 17%,rgba(31,25,63,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(73,9,87,0.95) 0%,rgba(73,9,87,0.95) 17%,rgba(31,25,63,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2490957', endColorstr='#f21f193f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.splash__content { width: 100%; max-width: 1100px; background: #fff; border-radius: 3px; box-shadow: 0 0 35px rgba(black, 0.7); display: flex; justify-content: space-between; flex-wrap: wrap; min-height: 570px; margin: 0 20px;
+    @include breakpoint(cousinbear) { flex-direction: column-reverse;}
+    
+    &__why { width: 40%; background: $primary; display: flex; flex-direction: column; justify-content: center; text-align: left; padding: 80px 40px; background: url('img/wc-login-bk.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;
+        
+        @include breakpoint(cousinbear) { width: 100%; padding: 40px;}
+
+		h2 { font-size: 24px; font-weight: 700; margin-bottom: 20px; color: $secondary;}
+
+		ul {
+			li { font-size: 16px; color: #fff; padding: 10px 0; display: flex; line-height: 24px;
+				i { color: $green; margin-right: 10px; position: relative; top: 4px;}
+			}
+		}
+
+	}
+
+    &__form { width: 60%; padding: 80px; display: flex; flex-direction: column; align-items: center; position: relative;
+        
+		@include breakpoint(cousinbear) { width: 100%; padding: 40px;}
+		
+		a.splash__close { position: absolute; top: 5px; right: 20px;
+			i { font-size: 20px; color: $secondary; font-size: 42px; display: block; transition: all .3s ease;}
+
+			&:hover { 
+				i { color: tomato; transition: all .3s ease;}
+			}
+		}
+
+		figure { max-width: 240px; margin-bottom: 40px;}
+
+		h2 { font-size: 22px; color: $primary; margin-bottom: 20px;}
+		a { color: $secondary;}
+
+		form { max-width: 395px; width: 100%;}
+
+		.wc__form__row { padding-bottom: 20px;
+			&:last-child { padding-bottom: 0;}
+
+			.wc__form__field { display: flex; flex-direction: column;
+				label { font-size: 16px; font-weight: 600; margin-bottom: 5px; display: none;
+					span.required { color: tomato;}
+				}
+
+				input[type="text"],
+				input[type="email"],
+				input[type="password"],
+				select { font-family: $primaryFont; font-size: 16px; padding: 20px; border:none; background: $lightgrey; border-radius: 3px;}
+
+				small { font-size: 12px; text-align: center;
+					&.dismiss { margin-top: 10px;
+						a { color: $text;}
+					}
+				}
+
+				button { border: none; background: $secondary; font-family: $primaryFont; font-size: 18px; font-weight: 600; color: #fff; padding:10px 40px; align-self: center; border-radius: 3px; cursor: pointer; transition: all .3s ease; margin-top: 20px;
+					&:hover { background: darken($secondary, 5%); transition: all .3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1)}
+				}
+			}
+		}
+	}
+
+	.close-splash { position: absolute; top: 20px; right: 20px;
+		a { color: #fff; font-size: 20px; display: block;
+			&:hover { color: $tertiary;}
+
+			&:before { font-size: 40px; position: relative; top: -8px; margin-left: 10px; float: right;}
+		}
+	}
+}

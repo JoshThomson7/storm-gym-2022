@@ -1,0 +1,20 @@
+/*
+------------------------------------------------
+   ______                                 __
+  / ____/___ __________  __  __________  / /
+ / /   / __ `/ ___/ __ \/ / / / ___/ _ \/ /
+/ /___/ /_/ / /  / /_/ / /_/ (__  )  __/ /
+\____/\__,_/_/   \____/\__,_/____/\___/_/
+
+------------------------------------------------
+Carousel
+*/
+
+.fc_carousel_images {
+    .carousel_images {
+        .carousel_image { display: flex !important; justify-content: center;
+            a { display: flex; justify-content: center;}
+            img { width: auto; max-height: 100px;}
+        }
+    }
+}

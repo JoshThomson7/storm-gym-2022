@@ -1,0 +1,125 @@
+.wp__feefo { padding: 15px 40px; max-width: 650px; position: relative; z-index: 2; margin: 0 auto; background-color: #fff; box-shadow: 0 0 3px 3px rgba(0,0,0,0.05); justify-content: center; display: flex; align-items: center;
+
+    a { justify-content: center; display: flex; align-items: center;}
+
+    @include breakpoint(cousinbear) { background: $lightgrey;}
+
+    figure { width: 95px;}
+
+    .feefo__rating { display: flex; align-items: center; width: 40%; justify-content: center; padding-right: 30px;
+
+        .feefo__score { font-size: 22px; color: $text; font-weight: 600; padding-left: 20px;}
+        //.feefo__stars { font-size: 28px;}
+
+        .feefo__stars { unicode-bidi: bidi-override; color: #ccc; font-size: 25px; position: relative; margin: 0; padding: 0; display: flex; align-items: center;
+
+            .filled__stars { color: #fcdc48; padding: 0; position: absolute; z-index: 1; display: block; top: 0; left: 0; overflow: hidden;
+                span.stars { display: inline-block;}
+            }
+        
+            .empty__stars { padding: 0; display: block; z-index: 0;}
+        }
+    }
+
+    .feefo__meta { display: flex; justify-content: space-between; align-items: center; width: 60%; padding-left: 20px; border-left: 1px darken($lightgrey, 5%) solid; font-size: 20px;
+
+        p { font-size: 14px; color: $text; width: 60%; font-weight: 500;}
+    }
+
+    &.banners { position: relative; top: -30px; z-index: 6;
+        @include breakpoint(cousinbear) { flex-direction: column; box-shadow: none; padding: 7px; max-width: 350px; min-width: 280px; top: -10px; margin-bottom: -18px;}
+
+        a { justify-content: center; display: flex; align-items: center;}
+
+        .feefo__rating { 
+            @include breakpoint(cousinbear) { width: 100%; padding-right: 0;}
+
+            .feefo__stars { 
+                @include breakpoint(cousinbear) { font-size: 22px;}
+            }
+
+            .feefo__score { 
+                @include breakpoint(cousinbear) { font-size: 20px; padding: 0 15px 0 5px;}
+            }
+        }
+
+        .feefo__meta {
+            @include breakpoint(cousinbear) { width: 100%; padding: 0; flex-direction: column; border-left: none;}
+
+            p { 
+                @include breakpoint(cousinbear) { display: none;}
+            }
+
+            figure { 
+                @include breakpoint(cousinbear) { margin-top: 1px; width: 55px;}
+            }
+        }
+    }
+
+    &.product { top: 0; margin: 15px 0 0 0; justify-content: center; padding: 10px; min-width: 240px; width: 100%; max-width: 180px;
+        @include breakpoint(cousinbear) { flex-direction: row;}
+
+        .feefo__rating { width: auto; padding-right: 10px;
+            .feefo__stars { font-size: 18px;}
+            .feefo__score { font-size: 18px; padding-left: 10px;}
+        }
+        .feefo__meta { width: auto; padding-left: 10px;
+            @include breakpoint(cousinbear) { width: auto; padding-left: 10px; flex-direction: row; border-left: none;}
+            figure { width: 65px;}
+        }
+
+        &.small { min-width: auto; max-width: auto; width: 140px; padding: 3px 5px 4px; margin: 10px 0 5px;
+            .feefo__rating { padding-right: 5px;
+                .feefo__stars { font-size: 10px;}
+                .feefo__score { font-size: 12px;}
+            }
+
+            .feefo__meta { padding-left: 5px; border-left: none; margin-top: -2px;
+                figure { width: 40px;}
+            }
+        }
+    }
+
+    &.primary { background-color: $primary;
+        .feefo__rating {
+            .feefo__score { color: #fff; padding-left: 5px;}
+        }
+
+        .feefo__meta { border-left: 1px lighten($primary, 3%) solid;
+            @include breakpoint(cousinbear) { border-left: none;}
+
+            p { color: #fff;}
+
+            figure { 
+                svg { 
+                    path.letters { fill: #fff !important;}
+                }
+            }
+        }
+    }
+
+    &.dark { background-color: $text;
+        .feefo__rating {
+            .feefo__score { color: #fff; padding-left: 5px;}
+        }
+
+        .feefo__meta { border-left: 1px lighten($text, 3%) solid;
+            @include breakpoint(cousinbear) { border-left: none;}
+
+            p { color: #fff;}
+
+            figure { 
+                svg { 
+                    path.letters { fill: #fff !important;}
+                }
+            }
+        }
+    }
+
+    &.small { background-color: lighten($text, 20%);}
+
+    .apm__clinic--single-content & { top: 0; max-width: 100%;
+        
+    }
+
+}

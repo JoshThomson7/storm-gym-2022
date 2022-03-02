@@ -1,0 +1,23 @@
+/*
+-----------------------------
+ _    ___     __
+| |  / (_)___/ /__  ____
+| | / / / __  / _ \/ __ \
+| |/ / / /_/ /  __/ /_/ /
+|___/_/\__,_/\___/\____/
+
+-----------------------------
+Video
+*/
+
+.fc_video { margin: 10px 0;
+    .video-wrapper { margin:0 auto;
+        .video-responsive {position:relative; padding-bottom:56.25%; /* 16:9 */ padding-top:25px; height:0;}
+
+        .video-responsive object,
+        .video-responsive embed,
+        .video-responsive iframe {position:absolute; top:0; left:0; width:100%; height:100%; margin:0 auto; left:0; right:0;}
+    }
+
+    p { margin-bottom: 20px;}
+}

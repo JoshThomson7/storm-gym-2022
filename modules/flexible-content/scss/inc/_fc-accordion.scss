@@ -1,0 +1,44 @@
+/*
+-----------------------------------------------------
+    ___                            ___
+   /   | ______________  _________/ (_)___  ____
+  / /| |/ ___/ ___/ __ \/ ___/ __  / / __ \/ __ \
+ / ___ / /__/ /__/ /_/ / /  / /_/ / / /_/ / / / /
+/_/  |_\___/\___/\____/_/   \__,_/_/\____/_/ /_/
+
+-----------------------------------------------------
+Accordion
+*/
+
+.fc_accordion {
+    &.grey {
+        .accordion__wrap {
+            h3 { background:darken($lightgrey, 4%);
+                &:hover:not(.active) { background:darken($lightgrey, 6%);}
+            }
+        }
+    }
+
+    .accordion__wrap { border-bottom: 1px $border solid; position: relative;
+
+        h3 { padding: 20px; display:flex; justify-content:space-between; color:$primary; font-size: 23px; margin:0; cursor:pointer; line-height:28px; font-weight: 700;
+            span { display:block; margin-top:7px; color:$text; font-size:26px; margin:0 0 0 20px; }
+        }
+
+        .accordion__content { padding: 10px 20px; display:none;}
+
+        .accordion__bg { position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; transform: scale(.8, .8); transition: all .2s ease;}
+
+        &.active { border-bottom: none; z-index: 2;
+            h3 { color:$primary; font-weight: 700;}
+            .accordion__content { display: block; animation: fadeInUp .3s ease-in;}
+            .accordion__bg { background: #fff; transform: scale(1.02, 1.1); box-shadow: 0 15px 60px rgba(black, 0.13);
+                @include breakpoint(mamabear) { transform: scale(1.02, 1.02);}
+            }
+        }
+
+        &.inactive {
+            h3 { color: lighten($text, 40%);}
+        }
+    }
+}

@@ -1,0 +1,378 @@
+/**
+ * AVB Styles
+ *
+ * @package advanced-video-banners/
+ * @dependency slick.js
+ * @version 1.0
+*/
+
+section.avb {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    .avb-banners {
+
+        position: relative;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease;
+        background: $tertiary;
+
+        &.slick-initialized {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .show-on-mobile { 
+            display: none;
+            @include breakpoint(cousinbear) {
+                display: block;
+            }
+        }
+
+        .hide-on-mobile { 
+            display: block;
+            @include breakpoint(cousinbear) {
+                display: none;
+            }
+        }
+
+        .avb-banner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 550px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform:translateZ(0) scale(1.0, 1.0);
+            -webkit-transform: translateZ(0) scale(1.0, 1.0);
+            overflow: hidden;
+
+
+            @for $i from 25 through 100 {
+                &.avb-#{$i}vh {
+                    height: #{$i}vh;
+                }
+            }
+
+            // Caption
+            .avb-banner__caption {
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                width: 100%;
+
+                @include breakpoint(cousinbear) { 
+                    align-items: flex-start;
+                    flex: 2;
+
+                    .max__width { 
+                        height: 100%;
+                    }
+                }
+
+                .avb-banner__caption-wrap { 
+                    width: 50%;
+
+                    @include breakpoint(cousinbear) { 
+                        width: 100%;
+                    }
+                }
+
+                h1,
+                h2 { font-size: 55px; font-weight: 900; color:#fff; padding:0 0 10px; line-height: 60px;
+                    @include breakpoint(cousinbear) { 
+                        font-size: 32px;
+                        line-height: 35px;
+                    }
+                }
+
+                h3 { font-size: 13px; font-weight: 500; color:$secondary; padding:0 0 10px; text-transform: uppercase; letter-spacing: 1px;}
+
+                p { font-size: 17px; color:rgba(white, 0.8); line-height: 25px; padding:10px 0 0; padding-right: 25%; letter-spacing: 0.5px;
+                    @include breakpoint(cousinbear) {
+                        padding: 0;
+                        font-size: 21px;
+                        line-height: 27px;
+                    }
+                    
+                    a { color: #fff; border-bottom: 1px #fff solid; }
+                }
+
+                .avb-banner__caption-actions { margin-top: 30px; display: flex; justify-content: flex-start;
+                    @include breakpoint(cousinbear) { margin-top: auto; width: 100%;}
+
+                    a { display: block; padding: 16px 60px; background: $primary; color: #fff; font-weight: 800; font-size: 15px; text-align: center; border: none; text-transform: none;
+                        &:hover { background: lighten($primary, 5%);}
+
+                        @include breakpoint(cousinbear) { 
+                            width: 100%;
+                            padding: 18px;
+                            margin-top: 20px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+            }
+
+            // Media
+            .avb-banner__media {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                height: 100%;
+                
+                .avb-banner__medium { 
+                    width: 100%;
+                    height: 100%;
+                    animation:slideOut .4s cubic-bezier(0.4, 0.29, 0.01, 1);
+                    position: relative;
+
+                    &.image {
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center;
+                        transition:all .8s ease;
+
+                        img {
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                    }
+                }
+
+                video {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    min-width: 100%;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto;
+                    transform: translate(-50%, -50%) scale(1.15);
+                }
+
+                iframe {
+                    position: relative;
+                    pointer-events: none;
+                }
+                
+                .loading {
+                    position: absolute;
+                    top: 44%;
+                    left: 0;
+                    width: 100%;
+                }
+                
+
+            }
+
+            .avb-banner__overlay { position: absolute; width: 100%; height: 100%; bottom: 0; left: 0; z-index: 1; display: flex;
+
+                @for $i from 0 through 100 {
+                    $num: 100-$i;
+                    $alpha: $i/100;
+                    &.opacity-#{$num} {
+                        @if $i == 100 {
+                            display: none;
+                        } @else {
+                            background: transparentize($tertiary, $alpha);
+                        }
+                        
+                    }
+                }
+
+            }
+
+        }
+
+        /// No Banner
+        &.avb-empty { 
+            background: $tertiary;
+
+            .avb-banner {
+                min-height: auto;
+                padding: 130px 0 20px;
+
+                .avb-banner__caption {
+                    h1, h2 { 
+                        font-size: 37px;
+                        color: #fff;
+                    }
+                    h2 { line-height: 41px;}
+                }
+            }
+        }
+        
+        /// Slick dot navigation
+        .slick-dots {
+            width: auto;
+            text-align: center;
+            bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            z-index: 5;
+
+            @include breakpoint(cousinbear) {
+                bottom: 30px;
+            }
+
+            li {
+                vertical-align: top;
+                margin: 0 4px;
+                width: auto;
+                height: auto;
+
+                @include breakpoint(cousinbear) {
+                    margin: 0 8px;
+                }
+
+                button {
+                    width: 15px;
+                    height: 15px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    background: rgba(white, 0.6);
+                    box-shadow: 0 0 0 0 transparent;
+                    vertical-align: middle;
+                    color: #fff;
+                    margin: 0;
+                    transition:all .3s ease;
+                    opacity: 1;
+                    &::before {
+                        display: none;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    @include breakpoint(cousinbear) {
+                        width: 13px;
+                        height: 13px;
+                        opacity: 1;
+                        background: $lightgrey;
+                    }
+                }
+                &.slick-active {
+                    button {
+                        background: $secondary;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        &.avb-dots-center { 
+            .slick-dots {
+                left: 50%;
+                transform: translateY(-50%);
+                justify-content: center;
+            }
+        }
+
+        &.avb-dots-left { 
+            .slick-dots {
+                left: 0;
+                justify-content: flex-start;
+                padding-left: calc((100vw - 1375px) / 2);
+
+                @include breakpoint(cousinbear) {
+                    all: none;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+        
+        &.avb-dots-right { 
+            .slick-dots {
+                right: 0; 
+                justify-content: flex-end;
+                padding-right: calc((100vw - 1375px) / 2);
+                
+                @include breakpoint(cousinbear) {
+                    all: none;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+
+        &.avb-inner {
+            @include breakpoint(cousinbear) {
+                margin-bottom: 0;
+
+                .avb-banner { 
+                    height: auto !important;
+                    min-height: auto;
+                    .avb-banner__caption-actions { 
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }    
+
+    }
+
+    .avb__down-arrow { 
+        position: absolute;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        bottom: 35px;
+        left: 50%;
+        transform: translateY(-50%);
+
+        @include breakpoint(cousinbear) {
+            display: none;
+        }
+
+        figure { 
+            cursor: pointer;
+
+            &:hover { 
+                svg { 
+                    transition: all .3s ease;
+                    transform: scale(1.07);
+                }
+            }
+        }
+
+        svg {
+            transition: all .3s ease;
+            transform: scale(1);
+            width: 50px;
+            path {
+                stroke: $secondary;
+            }
+        }
+    }
+
+}
+
+// @keyframes slideOut {
+//     from {
+//       filter:blur(15px);
+//     }
+//     to {
+//         filter:blur(0);
+//     }
+// }
+// @keyframes slideOut {
+//     from {
+//         filter:blur(0);
+//     }
+//     to {
+//         filter:blur(15px);
+//     }
+// }

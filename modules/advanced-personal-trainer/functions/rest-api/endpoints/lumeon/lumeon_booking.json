@@ -1,0 +1,52 @@
+{
+  "resourceType": "Appointment",
+  "extension": [
+   {
+      "url": "http://fhir.qinec.com/dstu2/appointment/payor",
+      "valueReference": {
+        "reference": "Patient/{lumeon_patient_id}"
+    	}
+    }, 
+    {
+         "url":"http://fhir.lumeon.com/dstu2/appointment/type",
+         "valueReference":{
+            "reference":"HealthcareService/{lumeon_service_id}",
+            "display": "{lumeon_service_name}"
+         }
+    },
+    {
+      "url": "http://fhir.qinec.com/dstu2/appointment/communication-schemes",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://fhir.qinec.com/dstu2/appointment/sms/confirmation",
+      "valueBoolean": true
+    }, 
+    {
+      "url": "http://fhir.qinec.com/dstu2/appointment/email/reminder",
+      "valueBoolean": true
+    }, 
+    {
+      "url": "http://fhir.qinec.com/dstu2/appointment/sms/reminder",
+      "valueBoolean": false
+    }
+  ],
+  "status": "proposed",
+  "slot": {
+    "reference":"Slot/{lumeon_slot_id}"
+  },
+  "type": {
+    "coding": [{
+      "code": "{lumeon_type_code}"
+    }]
+  },
+  "description": "{booking_description}",
+  "participant": [{
+    "required": "required",
+    "status": "accepted",
+    "actor": {
+      "reference": "Patient/{lumeon_patient_id}",
+      "display": "{lumeon_patient_name}"
+    }
+  }]
+}

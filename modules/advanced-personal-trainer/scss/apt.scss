@@ -1,0 +1,61 @@
+/**
+ * APM Styles
+ * SCSS
+ */
+
+@import '../../../scss/inc/vars';
+@import '../../../scss/inc/mixins';
+@import '../../../scss/inc/animations';
+
+@import 'inc/apt-filters';
+@import 'inc/apt-workouts';
+// @import 'inc/apm-cards';
+// @import 'inc/apm-page-layout';
+// @import 'inc/apm-locations';
+// @import 'inc/apm-services';
+// @import 'inc/apm-practitioners';
+// @import 'inc/apm-search';
+// @import 'inc/apm-single-clinic';
+// @import 'inc/apm-woo';
+
+// #spinner {
+
+//     $offset: 187;
+//     $duration: 1s;
+
+//     animation: rotator $duration linear infinite;
+
+//     @keyframes rotator {
+//         0% { transform: rotate(0deg); }
+//         100% { transform: rotate(270deg); }
+//     }
+
+//     .path {
+//         stroke-dasharray: $offset;
+//         stroke-dashoffset: 0;
+//         transform-origin: center;
+//         animation:
+//             dash $duration ease-in-out infinite, 
+//             colors ($duration*4) ease-in-out infinite;
+//     }
+
+//     @keyframes colors {
+//         0% { stroke: #fff; }
+//         25% { stroke: $secondary; }
+//         50% { stroke: $quaternary; }
+//         75% { stroke: $light_text; }
+//         100% { stroke: #fff; }
+//     }
+
+//     @keyframes dash {
+//         0% { stroke-dashoffset: $offset; }
+//         50% {
+//             stroke-dashoffset: $offset/4;
+//             transform:rotate(135deg);
+//         }
+//         100% {
+//             stroke-dashoffset: $offset;
+//             transform:rotate(450deg);
+//         }
+//     }
+// }

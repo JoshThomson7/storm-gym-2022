@@ -1,0 +1,84 @@
+/*
+-----------------------------
+  ______                        ____
+ /_  __/__  ____ _____ ___     / __ \____  ____        __  ______
+  / / / _ \/ __ `/ __ `__ \   / /_/ / __ \/ __ \______/ / / / __ \
+ / / /  __/ /_/ / / / / / /  / ____/ /_/ / /_/ /_____/ /_/ / /_/ /
+/_/  \___/\__,_/_/ /_/ /_/  /_/    \____/ .___/      \__,_/ .___/
+                                       /_/               /_/
+-----------------------------
+Team Pop-up
+*/
+
+.team__popup__holder { display:flex; transition:all .5s ease; background:rgba($text, 0.9); position:fixed; width:100%; height:100%; z-index:10; top:0; left:0; -ms-overflow-y:scroll; overflow-y:scroll; -webkit-overflow-scrolling:touch; visibility: hidden; opacity: 0; align-items:center; justify-content:center;
+
+    @include breakpoint(mamabear) { align-items: flex-start;}
+
+    &.on { transition:all .5s ease; visibility: visible; opacity: 1;}
+
+    .team__popup { background:rgba(255, 255, 255, 1); position:relative; transition:all .2s ease; transform:rotateX(90deg); max-width:1200px; display:none;
+        @include breakpoint(mamabear) { flex-direction:column;}
+
+        .team__popup__img { width:40%; position:relative; overflow: hidden;
+            @include breakpoint(mamabear) { width:100%; margin-bottom:20px;}
+
+            img { width:100%;}
+
+            a.team__video { position:absolute; bottom:-87%; left:0; background:rgba($primary, 0.8); padding:18px 0 0; text-align:center; color:#fff; font-size:20px; display:block; width:100%; height:100%; transition:all .5s ease; text-transform:uppercase; display: flex; justify-content: center; align-items: flex-start;
+
+                span { display:inline-block; margin:0 10px 0 0; text-align:center; font-size:22px;
+                    &:before { margin-left:4px;}
+                }
+
+                &:hover { transition:all .5s ease; bottom:0; box-sizing:border-box; align-items: center; flex-direction: column;
+                    span { display:block; font-size:58px;
+                        &:before { margin-left:7px;}
+                    }
+                }
+            }
+        }
+
+        .team__popup__content { width:60%; padding:30px 40px 20px; position:relative;
+            @include breakpoint(mamabear) { width:100%; padding:20px 10px;}
+
+            .team__popup__nav { position:absolute; top:0; right:0;
+                ul { display:flex; margin:0; padding:0;
+                    li { list-style:none;
+                        a { font-size:28px; color:$text; padding:15px 10px; display:block;
+                            &:hover { color:$primary;}
+                        }
+
+                        &.inactive {
+                            a { color: $lightgrey; pointer-events: none;}
+                        }
+                    }
+                }
+            }
+
+            .team__popup__icon { line-height:31px; float:left; padding:0 20px 25px 0;
+                span.icon { color:$primary; display:block; float:left; margin-right:10px; font-size:30px;}
+                a { color:$text;}
+            }
+        }
+
+        h3 { font-size: 30px; color:$primary; font-weight: 700; margin:0 0 25px;
+            span { display:block; font-size:22px; color:$text; padding-top:10px; text-transform:none;}
+        }
+
+        .team__popup__email { display:block; padding-bottom:27px; padding-left:35px;
+            span { padding-top:4px; display:block;}
+            a { color:#d9cfcf;}
+        }
+
+        p { line-height: 26px; margin: 0 0 20px 0; font-size: 15px; padding: 0; color:$text; clear: both;
+            &:last-of-type { padding-bottom:0;}
+        }
+
+        &.is__active { display:flex; transform:rotateX(0deg);
+            &.rotate__bye { transform:rotateX(90deg); transition:all .2s ease;}
+            &.rotate__hello { transform:rotateX(0deg); transition:all .2s .2s ease;}
+        }
+
+    }
+
+}

@@ -1,0 +1,106 @@
+/**
+* Custom datetime picker for estate agents
+* 
+* 
+*/
+
+&.gf__radio__date,
+&.gf__radio__time { position: relative;
+	
+	ul.gfield_radio { padding:0 30px; box-sizing:border-box;
+		li { padding:0; position:relative; justify-content: center; list-style: none;
+
+			label { padding:5px; display:block;
+				span { display:flex; flex-direction:column; align-items:center;
+					&.gf__date { border-radius: 3px; box-shadow: 0 2px 5px rgba(black, 0.05); padding: 10px 40px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px darken($lightgrey, 5%) solid; background: #fff;
+
+						.gf__date__weekday { font-size:18px; color: darken($secondary, 10%); padding-bottom:4px;
+							@include breakpoint(iphone_g) { font-size:14px;}
+						}
+
+						.gf__date__day { font-size:34px; color: $primary; line-height:46px;
+							@include breakpoint(iphone_g) { width:100%; height:30px; line-height:30px; font-size:16px; padding:0;}
+						}
+
+						.gf__date__month { font-size:14px; font-weight:400; text-transform:uppercase; color:$text; padding-top:4px;
+							@include breakpoint(iphone_g) { font-size:12px;}
+						}
+					}
+
+					&.gf__time {
+						.gf__time__digits { font-size:18px; color: $primary; display:flex; box-sizing:border-box; width:100%; border-radius: 3px; box-shadow: 0 2px 5px rgba(black, 0.05); padding: 10px 40px; display: flex; justify-content: center; align-items: center; border: 1px darken($lightgrey, 5%) solid;
+						}
+
+						.gf__time__message { font-size:12px; font-weight:400; color:$text; padding-top:4px;}
+
+						&.gf__out__of__hours {
+							.gf__time__digits { background:$lightgrey; color:lighten($text, 20%);}
+						}
+					}
+				}
+			}
+
+			input { -webkit-appearance:none; -moz-appearance:none; appearance:none; position:absolute; width:100%; height:100%; top:0; left:0; z-index:1; border:none; cursor:pointer;
+				&:focus { outline:none; border:none; box-shadow:none;}
+
+				@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+					display:none;
+				}
+
+				&:checked { -webkit-appearance:none; -moz-appearance:none; appearance:none; background:none;
+					+ label {
+						&:before { display: none;}
+
+						span {
+							&.gf__date { background: $primary;
+								.gf__date__weekday { color: #fff;}
+								.gf__date__day { color: $secondary;}
+								.gf__date__month { color:#fff;}
+							}
+
+							&.gf__time {
+								.gf__time__digits { color: $secondary; background:$primary;}
+
+								&.gf__out__of__hours { background:none;
+									.gf__time__message { background:none;}
+								}
+							}
+						}
+					}
+				}
+
+				/*&:not(:checked) + label {
+					img { opacity:0.5;}
+				}*/
+			}
+
+		}
+
+	}
+
+}
+
+.gf__selected__date,
+.gf__selected__time { text-align: center;
+	span { margin-bottom: 20px; color: $primary; font-size: 24px;}
+}
+
+// Lightslider
+.lSAction { 
+	.lSPrev,
+	.lSNext { height: auto; display: flex; align-items: center; justify-content: center; height: 100%; top: 0; transition: all .3s ease; opacity: 1;
+		&:before { font-family: "Font Awesome 5 Pro"; display: block; font-size: 24px; color: $primary;}
+
+		&:hover { background: $secondary; transition: all .3s ease;
+			&:before { color: #fff;}
+		}
+	}
+
+	.lSPrev { 
+		&:before { content: "\f053";}
+	}
+
+	.lSNext { 
+		&:before { content: "\f054";}
+	}
+}

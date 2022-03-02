@@ -1,0 +1,31 @@
+/*
+    Buttons
+*/
+
+.fc_buttons {
+
+    .buttons__wrap { display: flex; align-items: center;
+
+        @include breakpoint(teenbear){
+            display: block;
+        }
+
+        a{
+            @include breakpoint(teenbear){
+                margin: 5px auto!important;
+            }
+        }
+
+        &.align-left { justify-content: flex-start;
+            a { margin-right: 20px;}
+        }
+
+        &.align-center { justify-content: center;
+            a { margin: 0 10px;}
+        }
+
+        &.align-right { justify-content: flex-end;
+            a { margin-left: 20px;}
+        }
+    }
+}

@@ -1,0 +1,112 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 700;
+
+    a { color: $primary;}
+}
+
+h2 { line-height: 43px; font-size: 32px; color: $primary; font-weight: 800;
+    @include breakpoint(teenbear){ line-height: 39px; font-size: 28px;}
+}
+h3 { line-height: 39px; font-size: 28px; color: $primary; font-weight: 800;
+    @include breakpoint(teenbear){ line-height: 35px; font-size: 24px;}
+}
+h4 { line-height: 35px; font-size: 24px; color: $primary; font-weight: 800;
+    @include breakpoint(teenbear){ line-height: 31px; font-size: 20px;}
+}
+h5 { line-height: 31px; font-size: 20px; color: $primary; font-weight: 800;
+    @include breakpoint(teenbear){ line-height: 27px; font-size: 18px;}
+}
+h6 { line-height: 29px; font-size: 18px; color: $primary; font-weight: 800;
+    @include breakpoint(teenbear){ line-height: 25px; font-size: 16px;}
+}
+
+p { font-size: 17px; color: $textLight; margin-bottom: 20px; font-weight: 500; line-height: 27px;
+    a { color: $primary; font-weight: 600; position: relative;
+        &:after { display: block; content: ''; position: absolute; left: 50%; bottom: -4px; height: 2px; transition: transform .2s ease-in-out; width: 100%; background: $primary; transform: scaleX(0) translateX(-50%); transform-origin: 0 0;}
+        &:hover:after { width: 100%; transition: transform .2s ease-in-out; transform: scaleX(1) translateX(-50%);}
+    }
+    strong { font-weight: 700;}
+}
+
+// a:not(.button) { color: $primary; font-weight: 600; position: relative;
+//     &:after { display: block; content: ''; position: absolute; left: 50%; bottom: -4px; height: 2px; transition: transform .2s ease-in-out; width: 100%; background: $primary; transform: scaleX(0) translateX(-50%); transform-origin: 0 0;}
+//     &:hover:after { width: 100%; transition: transform .2s ease-in-out; transform: scaleX(1) translateX(-50%);}
+// }
+
+ul,  ol {
+    padding: 0 0 0 25px;
+    margin: 0 0 30px 0;
+    line-height: 26px;
+
+    li { font-size: 15px; list-style: disc; margin-bottom: 20px; color: $text; font-weight: 500;
+
+        @include breakpoint(teenbear){ margin-bottom: 15px;}
+
+        a { color: $primary;}
+    }
+}
+
+img {
+    &.alignright { margin: 0 0 0 20px; width: auto; height: auto; float: right; }
+    &.alignleft { margin: 0 20px 0 0; width: auto; height: auto; float: left; }
+
+    &.alignright,
+    &.alignleft {
+        @include breakpoint(mamabear){ width: 100%; float: none; margin: 0 0 20px 0; }
+    }
+
+    &.aligncenter { margin: 0 auto; }
+}
+
+.wpcf7 {
+    margin: 30px 0;
+    width: 100%;
+    form {
+        div.wpcf7-validation-errors {
+
+            background: #ef3c3c;
+        }
+        div.wpcf7-mail-sent-ok {
+            background: #21d697;
+
+        }
+        div.wpcf7-response-output {
+            padding: 10px;
+            margin: 0;
+            color: #fff;
+            border: none;
+            text-align: center;
+        }
+        p {
+            margin: 0 0 20px 0;
+            .ajax-loader {
+                display: none;
+            }
+            span.wpcf7-not-valid-tip {
+                margin: 10px 0 20px;
+                color: #ef3c3c;
+            }
+            input:not([type='submit']), textarea, select {
+                padding: 15px;
+                margin: 0 0 10px 0;
+                border: 1px solid $lightgrey;
+                width: 100%;
+                font-size: 16px;
+                color: #999;
+                resize: none;
+                display: block;
+            }
+
+            input[type='submit']{
+                padding: 10px 15px;
+                background: $primary;
+                color: #fff;
+                border: none;
+                width: 100%;
+                font-size: 17px;
+            }
+        }
+    }
+}

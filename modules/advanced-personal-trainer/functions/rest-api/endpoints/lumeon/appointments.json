@@ -1,0 +1,4267 @@
+{
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": "85",
+    "link": [
+        {
+            "relation": "first",
+            "url": "https://capitalphysiotest.lumeon.com/module/api/fhir/dstu2/Slot?page=1"
+        },
+        {
+            "relation": "last",
+            "url": "https://capitalphysiotest.lumeon.com/module/api/fhir/dstu2/Slot?page=1"
+        }
+    ],
+    "entry": [
+        {
+            "resource": {
+                "id": "97777.2888470",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T11:30:00+01:00",
+                "end": "2020-07-21T11:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888471",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T11:45:00+01:00",
+                "end": "2020-07-21T12:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888472",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T12:00:00+01:00",
+                "end": "2020-07-21T12:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888473",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T12:15:00+01:00",
+                "end": "2020-07-21T12:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888474",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T12:30:00+01:00",
+                "end": "2020-07-21T12:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888475",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T12:45:00+01:00",
+                "end": "2020-07-21T13:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888476",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T13:00:00+01:00",
+                "end": "2020-07-21T13:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888477",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T13:15:00+01:00",
+                "end": "2020-07-21T13:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888478",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Jason Sammon"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T13:30:00+01:00",
+                "end": "2020-07-21T13:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888479",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T13:45:00+01:00",
+                "end": "2020-07-21T14:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888480",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T14:00:00+01:00",
+                "end": "2020-07-21T14:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888481",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T14:15:00+01:00",
+                "end": "2020-07-21T14:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888482",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T14:30:00+01:00",
+                "end": "2020-07-21T14:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888483",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T14:45:00+01:00",
+                "end": "2020-07-21T15:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888484",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T15:00:00+01:00",
+                "end": "2020-07-21T15:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888485",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T15:15:00+01:00",
+                "end": "2020-07-21T15:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888486",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T15:30:00+01:00",
+                "end": "2020-07-21T15:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888487",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T15:45:00+01:00",
+                "end": "2020-07-21T16:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888488",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T16:00:00+01:00",
+                "end": "2020-07-21T16:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888489",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T16:15:00+01:00",
+                "end": "2020-07-21T16:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888490",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T16:30:00+01:00",
+                "end": "2020-07-21T16:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888491",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T16:45:00+01:00",
+                "end": "2020-07-21T17:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888492",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T17:00:00+01:00",
+                "end": "2020-07-21T17:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888493",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T17:15:00+01:00",
+                "end": "2020-07-21T17:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97777.2888494",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97777"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-21T17:30:00+01:00",
+                "end": "2020-07-21T17:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890232",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T09:00:00+01:00",
+                "end": "2020-07-22T09:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890233",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T09:15:00+01:00",
+                "end": "2020-07-22T09:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890234",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T09:30:00+01:00",
+                "end": "2020-07-22T09:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890235",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T09:45:00+01:00",
+                "end": "2020-07-22T10:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890236",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T10:00:00+01:00",
+                "end": "2020-07-22T10:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890237",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T10:15:00+01:00",
+                "end": "2020-07-22T10:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890238",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T10:30:00+01:00",
+                "end": "2020-07-22T10:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890239",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T10:45:00+01:00",
+                "end": "2020-07-22T11:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890240",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T11:00:00+01:00",
+                "end": "2020-07-22T11:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890241",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T11:15:00+01:00",
+                "end": "2020-07-22T11:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890242",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T11:30:00+01:00",
+                "end": "2020-07-22T11:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890243",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T11:45:00+01:00",
+                "end": "2020-07-22T12:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890244",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T12:00:00+01:00",
+                "end": "2020-07-22T12:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890245",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T12:15:00+01:00",
+                "end": "2020-07-22T12:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890246",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T12:30:00+01:00",
+                "end": "2020-07-22T12:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890247",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T12:45:00+01:00",
+                "end": "2020-07-22T13:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890248",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T13:00:00+01:00",
+                "end": "2020-07-22T13:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890249",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T13:15:00+01:00",
+                "end": "2020-07-22T13:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890250",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T13:30:00+01:00",
+                "end": "2020-07-22T13:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890251",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T13:45:00+01:00",
+                "end": "2020-07-22T14:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890252",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T14:00:00+01:00",
+                "end": "2020-07-22T14:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890253",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T14:15:00+01:00",
+                "end": "2020-07-22T14:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890254",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T14:30:00+01:00",
+                "end": "2020-07-22T14:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890255",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T14:45:00+01:00",
+                "end": "2020-07-22T15:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890256",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T15:00:00+01:00",
+                "end": "2020-07-22T15:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890257",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T15:15:00+01:00",
+                "end": "2020-07-22T15:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890258",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T15:30:00+01:00",
+                "end": "2020-07-22T15:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890259",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T15:45:00+01:00",
+                "end": "2020-07-22T16:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890260",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T16:00:00+01:00",
+                "end": "2020-07-22T16:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890261",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T16:15:00+01:00",
+                "end": "2020-07-22T16:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "97829.2890262",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/97829"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-22T16:30:00+01:00",
+                "end": "2020-07-22T16:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955936",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T08:00:00+01:00",
+                "end": "2020-07-24T08:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955937",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T08:15:00+01:00",
+                "end": "2020-07-24T08:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955938",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T08:30:00+01:00",
+                "end": "2020-07-24T08:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955939",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T08:45:00+01:00",
+                "end": "2020-07-24T09:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955940",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T09:00:00+01:00",
+                "end": "2020-07-24T09:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955941",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T09:15:00+01:00",
+                "end": "2020-07-24T09:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955942",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T09:30:00+01:00",
+                "end": "2020-07-24T09:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955943",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T09:45:00+01:00",
+                "end": "2020-07-24T10:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955944",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T10:00:00+01:00",
+                "end": "2020-07-24T10:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955945",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T10:15:00+01:00",
+                "end": "2020-07-24T10:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955946",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T10:30:00+01:00",
+                "end": "2020-07-24T10:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955947",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T10:45:00+01:00",
+                "end": "2020-07-24T11:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955948",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T11:00:00+01:00",
+                "end": "2020-07-24T11:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955949",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T11:15:00+01:00",
+                "end": "2020-07-24T11:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955950",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T11:30:00+01:00",
+                "end": "2020-07-24T11:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955951",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T11:45:00+01:00",
+                "end": "2020-07-24T12:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955952",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T12:00:00+01:00",
+                "end": "2020-07-24T12:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955953",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T12:15:00+01:00",
+                "end": "2020-07-24T12:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955954",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T12:30:00+01:00",
+                "end": "2020-07-24T12:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955955",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T12:45:00+01:00",
+                "end": "2020-07-24T13:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955956",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T13:00:00+01:00",
+                "end": "2020-07-24T13:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955957",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T13:15:00+01:00",
+                "end": "2020-07-24T13:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955958",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T13:30:00+01:00",
+                "end": "2020-07-24T13:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955959",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T13:45:00+01:00",
+                "end": "2020-07-24T14:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955960",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T14:00:00+01:00",
+                "end": "2020-07-24T14:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955961",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T14:15:00+01:00",
+                "end": "2020-07-24T14:30:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955962",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T14:30:00+01:00",
+                "end": "2020-07-24T14:45:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955963",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T14:45:00+01:00",
+                "end": "2020-07-24T15:00:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "resource": {
+                "id": "99946.2955964",
+                "resourceType": "slot",
+                "extension": [
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location/room",
+                        "valueReference": {
+                            "reference": "Location/R182",
+                            "display": "Harley Street - Harley Street - Room 1"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/location",
+                        "valueReference": {
+                            "reference": "Location/L114",
+                            "display": "Harley Street"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/appointment/price",
+                        "valueString": "£65.00 + £0.00 upgrade"
+                    },
+                    {
+                        "url": "http://fhir.lumeon.com/dstu2/practitioner",
+                        "valueReference": {
+                            "reference": "Practitioner/494491",
+                            "display": "Nick Webb"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "IA",
+                            "display": "Physio - Initial (45)"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/99946"
+                },
+                "freeBusyType": "free",
+                "start": "2020-07-24T15:00:00+01:00",
+                "end": "2020-07-24T15:15:00+01:00"
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

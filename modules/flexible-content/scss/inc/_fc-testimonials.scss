@@ -1,0 +1,81 @@
+/*
+    Testimonials
+*/
+
+.fc_testimonials {
+
+    .testimonials__wrapper { margin: 0 -20px 0;
+
+        article {
+            .inner { padding: 20px;}
+
+            .testimonial__meta { padding-bottom:20px; flex:1 0 100%;
+
+                h3 { font-size: 19px; color: $text; margin-bottom: 10px; line-height: 0.5;}
+
+                .stars {
+                    @include breakpoint(mamabear) { margin-bottom:10px;}
+                    span { color:$secondary; font-size: 15px;}
+                }
+            }
+
+            .testim__content { padding-right: 20px; overflow: hidden;
+                &.trunc { height: 75px;}
+                p { font-size:16px; line-height:26px; color:$text; padding-bottom:15px; margin:0;}
+            }
+
+            .testim__read-more { font-size: 13px; color: $primary; display: block; margin: 10px 20px 0 0; cursor: pointer; text-align: right;
+                &:hover { color: lighten($primary, 5%);}
+            }
+
+        }
+
+    }
+
+    // Slick dot navigation
+    .slick-dots {
+        text-align: center;
+        padding: 15px 0 0 0;
+        bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            vertical-align: top;
+            margin: 0 4px;
+            width: auto;
+            height: auto;
+
+            button {
+                width: 13px;
+                height: 13px;
+                border: none;
+                cursor: pointer;
+                border-radius: 50%;
+                background: $text;
+                box-shadow: 0 0 0 0 transparent;
+                vertical-align: middle;
+                color: #fff;
+                margin: 0;
+                transition:all .3s ease;
+                opacity: .4;
+                &::before {
+                    display: none;
+                }
+                &:focus {
+                    outline: none;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            &.slick-active {
+                button {
+                    background: $tertiary;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

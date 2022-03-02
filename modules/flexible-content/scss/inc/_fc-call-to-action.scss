@@ -1,0 +1,34 @@
+/*
+    Call to action
+*/
+
+.fc_cta {
+    @include breakpoint(mamabear) { flex-direction: column; align-items: center;}
+
+    .cta__wrapper { display: flex; justify-content: space-between; align-items: center; position: relative; padding: 100px 0;
+        @include breakpoint(mamabear) { flex-direction: column; align-items: center;}
+
+        .max__width { display: flex; justify-content: space-between; align-items: center;
+            @include breakpoint(mamabear) { flex-direction: column; align-items: center;}
+        }
+
+        article { width: 400px; position: relative; z-index: 2;
+            @include breakpoint(mamabear) { text-align: center; margin-bottom: 20px; width: 100%;}
+
+            h2 { font-size: 40px; color: #fff; margin: 0;}
+            p { font-size: 18px; padding-top: 20px; margin: 0; color: #fff;}
+        }
+
+        a { display: block; padding: 18px 40px 16px; background: $primary; color:$text; font-size: 14px; font-weight: 800; text-transform: uppercase; position: relative; z-index: 2; border: none; align-self: center; font-family: $primaryFont;
+            @include breakpoint(mamabear) { font-size: 18px;}
+
+            &:hover { background: lighten($primary, 5%); transition:all .4s ease;}
+        }
+
+        .cta__overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;}
+
+        .cta__image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; background-size: cover; background-repeat: no-repeat; background-position: center;
+            &.cta__parallax { background-attachment: fixed;}
+        }
+    }
+}

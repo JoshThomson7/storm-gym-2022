@@ -1,0 +1,5 @@
+{
+    "id": "{reservation_id}",
+    "resourceType": "Appointment",
+    "status": "{status}"
+}

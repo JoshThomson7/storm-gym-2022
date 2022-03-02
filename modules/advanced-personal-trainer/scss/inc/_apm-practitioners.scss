@@ -1,0 +1,73 @@
+/**
+ * APM Practitioner (Single)
+ * SCSS
+ */
+
+// Single
+.apm__practitioner {
+
+    &--single {
+
+        &-content {
+    
+            .team__single__featured__image { min-height: 320px; background-size: cover; background-repeat: no-repeat; background-position: center; margin: 0 0 20px;}
+    
+            .team__single__info {
+                margin-bottom: 30px;
+    
+                h1 { font-size: 49px; font-weight: 700; line-height: 44px; color:$text;}
+                h3 { color: $primary; text-transform: uppercase; font-weight: 800; margin-top: 5px;}
+                
+            }
+        }
+
+        &-sidebar {
+
+            article {
+
+                &.team__single__info{
+                    @include breakpoint(brotherbear) { width: 50%;}
+                    @include breakpoint(teenbear) { width: 100%;}
+                    
+                    .team__single__image {
+                        background: #e3eff7;
+
+                        .container{
+                            width: 70%; min-height: 150px;
+
+                            img{ border-radius: 0 120px 120px 0; }
+                        }
+                    }
+            
+                    .team__single__location { margin: 35px 0 30px;
+                        ul { 
+                            li { display: flex; align-items: center; text-transform: uppercase; font-weight: 600; font-size: 14px; letter-spacing: 0.5px; margin-bottom: 5px;
+                                i { font-size: 16px; margin-right: 10px;}
+                            }
+                        }                        
+                    }
+            
+                    .team__single__categories{
+                        margin: 20px 0;
+            
+                        p {font-weight: 800;}
+                    }
+
+                }
+                
+                &.team__single__locations{
+                    @include breakpoint(brotherbear) { width: 50%; padding-left: 20px;}
+                    @include breakpoint(teenbear) { width: 100%; padding-left: 0;}
+
+                    .box { padding: 20px; border: 1px solid $borderDark; margin-bottom: 20px; font-size: 14px; line-height: 21px; letter-spacing: 0.5px; display: block; color: $text;
+                        @include breakpoint(teenbear) { text-align: center;}
+                        .name { font-weight: 800; font-size: 16px; margin-bottom: 5px;}
+
+                        &:hover { background: $secondary; border: 1px $secondary solid;}
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,186 @@
+{
+    "key": "group_545213988772f",
+    "title": "Footer Options",
+    "fields": [
+        {
+            "key": "field_537b446f96bf7",
+            "label": "Footer Menus",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_536b7c40c9f5d",
+            "label": "Footer Menus",
+            "name": "footer_menus",
+            "type": "repeater",
+            "instructions": "Add\/edit\/remove up to three footer menus.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Add Footer Menu",
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_536b7c5dc9f5e",
+                    "label": "Menu",
+                    "name": "footer_menu",
+                    "type": "nav_menu",
+                    "instructions": "Select a menu previously created from Appearance > Menus.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "save_format": "object",
+                    "container": 0,
+                    "allow_null": 1
+                }
+            ]
+        },
+        {
+            "key": "field_590b484ac33dd",
+            "label": "Footer Social",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_590b4853c33de",
+            "label": "Footer Social",
+            "name": "footer_social",
+            "type": "repeater",
+            "instructions": "Add social media icons",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Platform",
+            "sub_fields": [
+                {
+                    "key": "field_590b4c77c33df",
+                    "label": "Icon",
+                    "name": "footer_sm_icon",
+                    "type": "text",
+                    "instructions": "Enter here the icon class (<a href=\"http:\/\/ionicons.com\/\" target=\"_blank\">Icons' list<\/a>). Leave blank for no icon.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_590b4cf6c33e0",
+                    "label": "Platform",
+                    "name": "footer_sm_platform",
+                    "type": "text",
+                    "instructions": "Enter here the name of the platform.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_590b4d0cc33e1",
+                    "label": "URL",
+                    "name": "footer_sm_url",
+                    "type": "url",
+                    "instructions": "Paste a URL.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1494272325
+}

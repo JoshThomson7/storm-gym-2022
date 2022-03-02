@@ -1,0 +1,59 @@
+/*
+*	Blog Single
+*
+*	Styles for blog single
+*
+*	@package Blog
+*	@version 1.0
+*/
+
+.blog__single { padding-top: 130px;
+
+    .max__width { padding: 0;}
+
+    @include breakpoint(brotherbear) { flex-direction: column; padding-right: 0;}
+
+    .blog__featured__image { min-height: 320px; background-size: cover; background-repeat: no-repeat; background-position: center; margin: 0 0 20px; box-shadow: 0 5px 15px rgba(black, 0.5); border-radius: 5px; overflow: hidden;}
+
+	article { width: 80%; margin: 0 auto;
+		@include breakpoint(brotherbear) { width: 100%;}
+		
+		.blog__back__button{ color: $text; display: inline-block; margin-bottom: 20px;
+			&:hover{ color: $primary;}
+		}
+
+		.blog__info{
+			margin-bottom: 30px;
+
+			h5 { font-size: 17px; font-weight: 700; margin-bottom: 10px; color: $secondary; text-transform: uppercase; line-height: normal; letter-spacing: 1px;
+                a { color: $primary;
+                    &:hover { color: lighten($primary, 20%);}
+                }
+            }
+            h1 { font-size: 47px; text-transform: none; color: $primary; position: relative; margin: 0; font-weight: 900; line-height: 53px;}
+			
+			date { 
+                color: $tertiary;
+                font-size: 19px;
+                font-weight: 500;
+                margin: 20px 0;
+                display: block;
+            }
+
+            p.blog__excerpt { font-size: 23px; line-height: 37px;}
+		}
+
+		.blog__pagination{
+			display: flex; justify-content: space-between; margin: 20px 0; padding: 20px 0; border-top: 1px solid $tertiary; border-bottom: 1px solid $tertiary;
+
+			a{
+				text-transform: uppercase; color: $baseFontColor; font-weight: bold;
+			}
+		}
+
+		.flexible__content{
+			padding-bottom: 40px;
+		}
+
+	}
+}

@@ -1,0 +1,44 @@
+/**
+ * APM Woo Styles
+ */
+
+.apm__wc__notice {
+    padding: 14px;
+    display: flex;
+    margin-bottom: 10px;
+    background: $tertiary;
+    width: 100%;
+
+    &:last-child { margin-bottom: 0;}
+
+    figure {
+        margin-right: 10px;
+        i { 
+            font-size: 21px;
+            color: $primary;
+        }
+    }
+
+    h5 { font-size: 17px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;}
+
+    p { 
+        flex: 2;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: $text;
+        line-height: 21px;
+
+        &:last-child { margin-bottom: 0;}
+
+        strong { font-weight: 700;}
+    }
+
+    &.orange { background: $quaternary;
+        i { color: $text;}
+    }
+
+    &.half {
+        @include breakpoint(cousinbear) { width: 100%;}
+        width: 49.5%;
+    }
+}

@@ -1,0 +1,161 @@
+/*
+* MEDIA QUERIES
+* Breakpoints for responsive sites
+*/
+	@mixin breakpoint($point) {
+
+		@if $point == grandpabear or $point == 1200 {
+			@media (max-width: 1200px) { @content; }
+		}
+        @else if $point == grandmabear or $point == 1100 {
+			@media (max-width: 1100px)  { @content; }
+		}
+        @else if $point == papabear or $point == 1024 {
+			@media (max-width: 1024px)  { @content; }
+		}
+		@else if $point == brotherbear or $point == 900 {
+			@media (max-width: 900px)  { @content; }
+		}
+        @else if $point == cousinbear or $point == 800 {
+			@media (max-width: 800px)  { @content; }
+		}
+		@else if $point == mamabear or $point == 700 {
+			@media (max-width: 700px)  { @content; }
+        }
+        @else if $point == teenbear or $point == 650 {
+			@media (max-width: 650px)  { @content; }
+        }
+		@else if $point == sisterbear  or $point == 550{
+			@media (max-width: 550px)  { @content; }
+		}
+		@else if $point == babybear or $point == 400 {
+			@media (max-width: 400px)  { @content; }
+
+		} @else {
+            @media (max-width: $point)  { @content; }
+        }
+
+	}
+
+/*
+* TEXT TRUNCATE
+* An easy way to truncate text with an ellipsis. Requires the element to be block or inline-block.
+* Usage: @include text-truncate;
+* Source: http://web-design-weekly.com/2013/05/12/handy-sass-mixins/
+*/
+	@mixin text-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+	}
+
+
+/*
+* DON'T BREAK
+* Useful mixing so links don't overrun their container
+* Usage: @include dontbreak();
+* Source: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+*/
+	@mixin dontbreak() {
+		/* These are technically the same, but use both */
+	  	overflow-wrap: break-word;
+	  	word-wrap: break-word;
+	  	word-break: break-all;
+	  	word-break: break-word;
+	  	hyphens: auto;
+	}
+
+/*
+* Skew
+* Useful mixing to create skewed edges
+* Usage: @include angle-edge(#fff, bottomright, 3deg, topleft, 3deg);
+* Source: http://www.hongkiat.com/blog/skewed-edges-css/
+*/
+@mixin angle-edge($background:null, $pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null){
+    width: 100%;
+    position: relative;
+
+    @if $pos-top {
+	    &::before {
+            content: '';
+	        width: 100%;
+	        height: 100%;
+            position: absolute;
+            background: $background;
+            z-index: -1;
+            @if $pos-top == 'topleft'{
+                top: 0;
+                transform-origin: right top;
+                transform: skewY($angle-top);
+            }
+            @if $pos-top == 'topright' {
+                top: 0;
+                transform-origin: left top;
+                transform: skewY(-$angle-top);
+            }
+        }
+    }
+
+    @if $pos-btm {
+	    &::after{
+            content: '';
+        	width: 100%;
+        	height: 100%;
+        	position: absolute;
+        	background: $background;
+            z-index: -1;
+            @if $pos-btm == 'bottomleft' {
+                bottom: 0;
+                transform-origin: right bottom;
+                transform: skewY(-$angle-btm);
+            }
+
+            @if $pos-btm == 'bottomright' {
+                bottom: 0;
+                transform-origin: left bottom;
+                transform: skewY($angle-btm);
+            }
+	    }
+    }
+}
+
+/*
+* Pretty radio and checkboxes
+* Usage: @include pretty-checkradio(label);
+* Source: https://stackoverflow.com/questions/12743837/can-i-use-variables-for-selectors
+*/
+@mixin pretty-checkradio($element, $icon, $icon_hover, $bg:transparent) {
+
+    input[type="checkbox"],
+    input[type="radio"] { display:none;
+        width: auto;
+
+        + #{$element} { color: $text; display:flex; cursor: pointer; align-items: center;
+            &:before {
+                font-family: "Font Awesome 5 Pro";
+                display: block;
+                font-weight: normal;
+                font-size: 17px;
+                color: $primary;
+                content: "#{$icon}";
+                letter-spacing: 10px;
+                border:none;
+                border-radius: 0;
+                box-sizing: inherit;
+                cursor: pointer;
+                height: auto;
+                line-height: auto;
+                text-align: inherit;
+                text-indent: 0;
+                vertical-align: inherit;
+                width: auto;
+                padding: inherit;
+            }
+        }
+
+        &:checked + #{$element} { font-weight: 800; background: $bg; color: $text;}
+        &:checked + #{$element}:before { content: "#{$icon_hover}"; font-weight: bold; color: $primary} // checked icon
+        &:checked + #{$element}:before { letter-spacing:10px; } // allow space for check mark
+
+    }
+}

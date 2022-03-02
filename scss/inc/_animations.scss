@@ -1,0 +1,125 @@
+/**
+
+ * CSS3 Animations
+ *
+*/
+
+/**
+ * Fade
+*/
+
+// fadeInUp
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translate3d(0, 10%, 0);}
+    to { opacity: 1; transform: none;}
+}
+
+// fadeOutUp
+@keyframes fadeOutUp {
+    from { opacity: 1; transform: translate3d(0, 10%, 0);}
+    to { opacity: 0; transform: none;}
+}
+
+// fadeInDown
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translate3d(0, -25%, 0);}
+    to { opacity: 1; transform: none;}
+}
+
+// fadeOutDown
+@keyframes fadeOutDown {
+    from { opacity: 1; transform: translate3d(0, -25%, 0);}
+    to { opacity: 0; transform: none;}
+}
+
+// right
+@keyframes fadeInRight {
+    from { opacity: .2;transform: translate3d(8%, 0, 0);}
+    to { opacity: 1;transform: none}
+}
+
+// left
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translate3d(-8%, 0, 0);}
+    to { opacity: 1;transform: none;}
+}
+
+// Facebook-like animation
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+@-webkit-keyframes avbGradient {
+    0% { background-position: 10% 0%; }
+    50% { background-position: 91% 100%; }
+    100% { background-position: 10% 0%; }
+}
+
+@keyframes avbGradient {
+    0% { background-position: 10% 0%; }
+    50% { background-position: 91% 100%; }
+    100% { background-position: 10% 0%; }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba($tertiary, 0.7);
+    }
+
+    30% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 30px rgba($tertiary, 0);
+    }
+    
+    70% {
+        transform: scale(1);
+    }
+    
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba($tertiary, 0);
+    }
+}
+
+.pulse {
+    animation: pulse 3s infinite;
+    &:hover { 
+        animation: none;
+    }
+}
+
+.is-loading {
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: lighten($border, 3%);
+    background: linear-gradient(to right, lighten($border, 3%) 8%, lighten($border, 5%) 24%, lighten($border, 3%) 33%);
+    background-size: 800px 104px;
+    position: relative;
+
+    &.dark {
+        background: lighten($primary, 5%);
+        background: linear-gradient(to right, lighten($primary, 5%) 8%, lighten($primary, 10%) 24%, lighten($primary, 5%) 33%);
+    }
+}
+

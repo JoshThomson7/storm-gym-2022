@@ -1,0 +1,117 @@
+/*
+--------------------------------------------------------------------------------
+    ________          _ __    __        ______            __             __
+   / ____/ /__  _  __(_) /_  / /__     / ____/___  ____  / /____  ____  / /_
+  / /_  / / _ \| |/_/ / __ \/ / _ \   / /   / __ \/ __ \/ __/ _ \/ __ \/ __/
+ / __/ / /  __/>  </ / /_/ / /  __/  / /___/ /_/ / / / / /_/  __/ / / / /_
+/_/   /_/\___/_/|_/_/_.___/_/\___/   \____/\____/_/ /_/\__/\___/_/ /_/\__/
+
+--------------------------------------------------------------------------------
+Flexible Content
+*/
+
+body.page-has-flexible-content {
+    #page { background: #fff;}}
+
+@import 'fc-tab-scrollbar';
+
+.flexible__content { position: relative; z-index: 5;
+
+    @import 'fc-global';
+
+    @import 'inc/fc-general-text';
+
+    // Buttons
+    @import 'inc/fc-buttons';
+
+    // Free Text
+    @import 'inc/fc-free-text';
+
+    // Feature
+    @import 'inc/fc-feature';
+
+    // Icon Grid
+    @import 'inc/fc-icon-grid';
+
+    // Grid Links
+    @import 'inc/fc-grid-links';
+
+    // Accordion
+    @import 'inc/fc-accordion';
+
+    // Tabs
+    @import 'inc/fc-tabs';
+
+    // Gallery
+    @import 'inc/fc-gallery';
+
+    // Table
+    @import 'inc/fc-table';
+
+    // Video
+    @import 'inc/fc-video';
+
+    // Carousel
+    @import 'inc/fc-carousel';
+
+    // Team
+    @import 'inc/fc-team';
+    @import 'inc/fc-team-popup';
+
+    // 2 Column Boxes
+    @import 'inc/fc-column-boxes';
+
+    // Timeline
+    @import 'inc/fc-timeline';
+
+    // Call to action
+    @import 'inc/fc-call-to-action';
+
+    // Grid Boxes
+    @import 'inc/fc-grid-boxes';
+
+    // Grid Boxes
+    @import 'inc/fc-testimonials';
+
+    // Contact
+    @import 'inc/fc-contact';
+
+    // Feature Boxes
+    @import 'inc/fc-feature-boxes';
+
+    // Masonry
+    @import 'inc/fc-masonry';
+
+    // Steps
+    @import 'inc/fc-steps';
+
+}
+
+// @for $i from -360 through 360 {
+//     .fc-skewed-edge-top-angle-#{$i} {
+//         &:before { transform: skewY(#{$i}deg) !important;}
+//     }
+
+//     .fc-skewed-edge-bottom-angle-#{$i} {
+//         &:after { transform: skewY(#{$i}deg) !important;}
+//     }
+// }
+
+// .fc-skewed-edge { z-index: 5;
+
+//     $fc_bk_colours: primary, secondary, tertiary, lightgrey;
+
+//     // top
+//     &-top-normal { @include angle-edge( #fff, topright, 3deg);}
+//     &-top-invert { @include angle-edge( #fff, topleft, 3deg);}
+
+//     // bottom
+//     &-bottom-normal { @include angle-edge( #fff, null, null, bottomleft, 3deg);}
+//     &-bottom-invert { @include angle-edge( #fff, null, null, bottomright, 3deg);}
+    
+// }
+
+.is__curved__top-left { background-image: url('modules/flexible-content/img/half-circle-gradient-top-left.png'); background-position: top left; background-repeat: no-repeat;}
+.is__curved__top-right { background-image: url('modules/flexible-content/img/half-circle-gradient-top-right.png'); background-position: top right; background-repeat: no-repeat;}
+.is__curved__bottom-left { background-image: url('modules/flexible-content/img/half-circle-gradient-bottom-left.png'); background-position: bottom left; background-repeat: no-repeat;}
+.is__curved__bottom-right { background-image: url('modules/flexible-content/img/half-circle-gradient-bottom-right.png'); background-position: bottom right; background-repeat: no-repeat;}

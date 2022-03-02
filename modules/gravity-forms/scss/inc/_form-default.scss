@@ -1,0 +1,124 @@
+.gform_wrapper.gravity-theme {
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	  select,
+	  textarea,
+	  input {
+	    font-size: 16px;
+	  }
+	}
+
+	::-webkit-input-placeholder {
+	   color: $borderDark;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+        color: $borderDark;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+        color: $borderDark;
+	}
+
+	:-ms-input-placeholder {
+        color: $borderDark;
+	}
+
+	input[type="text"],
+	input[type="search"],
+	input[type="password"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="tel"],
+	input[type="file"],
+	textarea,
+	select {
+        font-family: $primaryFont;
+		appearance:none;
+		-webkit-appearance:none;
+		border-radius: 5px;
+		padding: 15px !important;
+        background: none;
+		color: $text;
+        border: none;;
+		line-height: normal;
+		display: block;
+		width: 100%;
+		background: $lightgrey;
+		transition: $input-transition;
+		box-sizing:border-box;
+		font-size: 14px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	input[type="file"] {
+		&:hover { cursor: pointer; }
+	}
+
+	input[type="search"] {
+		width: auto;
+		display: inline-block;
+	}
+
+	select {
+		background:url(img/select-arrow-down.png) no-repeat right center $lightgrey;
+        background-size:24px;
+        padding: 18px 0px 16px;
+
+	}
+
+	select[multiple],
+	select[size] {
+		height: auto;
+	}
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button { margin-top: 10px;
+		@include breakpoint(mamabear) { padding:15px; width:100%;}
+
+        font-family: $primaryFont;
+        padding: 17px 35px 15px;
+        font-weight: 800;
+        text-transform: uppercase;
+        align-self: flex-start;
+        display: flex;
+        transform: all .3s ease;
+        box-shadow: none;
+        transform: scale3d(1, 1, 1);
+        text-align: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        background: $primary;
+        color: #fff;
+        border: 2px solid $primary;
+        min-width: 200px;
+        transition: all .3s ease;
+
+		&:hover { transform: all .3s ease; transform: scale3d(1.02, 1.02, 1.02); transition: all .3s ease;}
+	}
+
+	// WebKit-style focus
+	// @link https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_tab-focus.scss [props]
+	input[type="checkbox"],
+	input[type="radio"],
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button {
+		&:focus {
+			outline: thin dotted;
+			outline: 5px auto -webkit-focus-ring-color;
+			outline-offset: -2px;
+		}
+	}
+
+	.gform_confirmation_wrapper  {
+		h2 { font-size:20px; text-align:center; color:#fff;}
+	}
+}

@@ -1,0 +1,108 @@
+///
+/// Steps
+///
+
+.fc_steps {
+    
+    &--wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px;
+
+        @include breakpoint(mamabear) { 
+            flex-direction: column;
+        }
+        
+        article {
+            width: percentage(1/3);
+
+            @include breakpoint(papabear) { 
+                width: percentage(1/2);
+            }
+
+            @include breakpoint(mamabear) { 
+                width: 100%;
+            }
+
+            .inner { 
+                padding: 30px;
+                display: flex;
+
+                .fc_step-count { 
+                    width: 50px;
+                    figure { 
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: $tertiary;
+                        font-size: 27px;
+                        color: #fff;
+                        font-weight: 900;
+                    }
+                }
+
+                .fc_step-content {
+                    padding-left: 20px;
+
+                    h3 { 
+                        font-size: 23px;
+                        color: $primary;
+                        line-height: 29px;
+                        font-weight: 900;
+                    }
+
+                    p { 
+                        font-size: 17px;
+                        list-style: 23px;
+                        line-height: 29px;
+                    }
+                }
+            }
+
+            &.fc_step-cta { 
+
+                .inner { 
+                    display: block;
+                }
+
+                .fc_step-content {
+                    background: $secondary;
+                    border-radius: 5px;
+                    padding: 50px 40px;
+                    position: relative;
+                    overflow: hidden;
+
+                    @include breakpoint(mamabear) { 
+                        padding: 40px 30px;
+                    }
+
+                    h3,
+                    .postcode__form { 
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    &:after { 
+                        content: '';
+                        position: absolute;
+                        width: 300%;
+                        height: 300%;
+                        top: 0;
+                        left: 0;
+                        background-image: url(img/quid-the-squid.svg);
+                        background-repeat: no-repeat;
+                        transform: rotate( 218deg ) translate(70%, -35%);
+                        z-index: 0;
+                        opacity: 0.4;
+                    }
+                }
+
+            }            
+
+        }
+    }
+
+}

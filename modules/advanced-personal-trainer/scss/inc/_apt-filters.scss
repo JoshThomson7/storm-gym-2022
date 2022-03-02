@@ -1,0 +1,71 @@
+/**
+ * APM Filters
+ * SCSS
+ */
+
+.apt-filters {
+    border-right: 1px $lightgrey solid;
+    padding: 10px 0 20px;
+
+    form {
+        article {
+            padding: 20px 20px 20px 0;
+            border-bottom: 1px $lightgrey solid;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            @include breakpoint(teenbear){ width: 100%;}
+
+            h5 { font-size: 17px; font-weight: 900; margin-bottom: 20px;}
+
+            @include pretty-checkradio("label", "\f111", "\f058");
+
+            ul { 
+                li { 
+                    margin-bottom: 5px;
+                    label { font-size: 15px;}
+                }
+            }
+
+            &.filter-all { padding: 0; width: auto;
+                @include breakpoint(teenbear){ width: 100%;}
+
+                a { background: $secondary; font-weight: 700; text-transform: uppercase; color: $text; display: flex; flex-direction: column; flex: 1 0 auto; height: 100%; justify-content: center; align-items: center;
+                    &:hover { background: $tertiary;}
+                }
+            }
+
+            &.is-select {
+                @include breakpoint(teenbear){ justify-content: center;}
+
+                // i { font-size: 13px; margin: -2px 7px 0 0;}
+                // span { text-transform: uppercase; font-weight: 700; font-size: 15px; line-height: 15px;}
+            
+                // .chosen-container { min-width: 280px; width: 100%; padding: 0; height: 100%;
+                //     a { display: flex; padding: 26px 31px; height: 100%;}
+                // }
+
+                // &.is-radius { 
+                //     .chosen-container { min-width: 200px;}
+                // }
+            }
+
+            &.is-input-text { display: flex; align-items: center; justify-content: center; max-width: 250px; width: 100%;
+                @include breakpoint(teenbear){ max-width: 100%;}
+
+                input { padding: 20px; background: none; border: none; font-size: 15px; font-family: $primaryFont; font-weight: 700; color: #fff; font-size: 15px; width: 100%;
+                    @include breakpoint(teenbear){ text-align: center; width: 100%;}
+                    &::placeholder { color: rgba(white, 0.8);}
+                }
+            }
+
+            &.disabled { opacity: 0.5; pointer-events: none;}
+        }
+    }
+
+    &.preloader { @extend .is-loading; height: 67px;}
+}
+
+#apm_response { margin-bottom: 20px;}

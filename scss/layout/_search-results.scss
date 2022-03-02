@@ -1,0 +1,22 @@
+/*
+    Search results
+*/
+
+section.search { margin-top:40px;
+    h2 { font-size:22px; font-weight:700; color:$primary; padding-bottom:20px; text-align:left;
+        a { color:$primary;}
+    }
+
+    ul.site-search-results { margin:0 0 20px; padding:0; overflow:hidden;
+        li { background:none; margin:0; padding:0; border-bottom:1px $lightgrey solid; overflow:hidden;
+            &:last-child { border-bottom:none;}
+            a { display:block; padding:15px 75px 15px 10px; font-size:18px; color:$text; position:relative; line-height:22px;
+                &:hover { color:$secondary;}
+
+                span { display:block; font-size:16px; color:lighten($text, 25%); text-transform:uppercase; padding-left:20px; position:absolute; right:15px; top:20px;
+                    @include breakpoint(babybear) { float:none; padding:10px 0 0 0;}
+                }
+            }
+        }
+    }
+}

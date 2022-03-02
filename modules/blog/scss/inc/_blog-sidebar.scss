@@ -1,0 +1,63 @@
+/*
+*	Blog Sidebar
+*
+*	Styles for the blog sidebar
+*
+*	@package Blog
+*	@version 1.0
+*/
+
+.blog__sidebar { padding: 0 0 0 20px; width:28%;
+
+	@include breakpoint(brotherbear) { width: 100%; padding: 0; display: flex;}
+	@include breakpoint(teenbear) { flex-direction: column;}
+
+	article { padding:0 0 40px 20px; clear:both; width: 100%;
+
+		@include breakpoint(brotherbear) { padding: 0 0 40px; width: 50%}
+		@include breakpoint(teenbear) { width: 100%; padding-left: 0;}
+
+		&.blogger__info{
+			@include breakpoint(brotherbear) { width: 50%;}
+			@include breakpoint(teenbear) { width: 100%;}
+
+			.blogger__name{
+				h3 { color: $text; font-size: 25px; font-weight: 700;}
+				h5 { color: $primary; font-size: 13px; margin: 5px 0 20px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;}
+			}
+	
+			.blogger__location{
+				display: flex; margin-top: 20px;
+	
+				p{text-transform: uppercase; font-weight: 600;}
+			}
+	
+			.blogger__categories{
+				margin: 20px 0;
+	
+				p{font-weight: 800;}
+			}
+	
+			.blogger__content{
+	
+				p{margin-bottom: 20px;}
+	
+				a{background: #00aaa7; color: #fff; border: none; padding: 15px 30px 13px;}
+			}
+		}
+
+		&.related__posts{
+			@include breakpoint(brotherbear) { width: 50%; padding-left: 20px;}
+			@include breakpoint(teenbear) { width: 100%; padding-left: 0;}
+
+			h5 { color: $primary; margin: 10px 0 20px; text-transform: uppercase; font-weight: 600; }
+
+			ul{
+				li { padding: 20px 0; border-top: 1px solid $borderDark; font-size: 14px;
+                    a { color: $text;}
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,29 @@
+/*
+    Bluecoat - 2 Column Boxes
+*/
+
+&.bluecoat__2__column__boxes { display: flex;
+    @include breakpoint(mamabear) { flex-direction: column;}
+
+    article { width: percentage(1/2); padding: 40px;
+        @include breakpoint(mamabear) { width: 100%; padding: 30px;}
+
+        p { font-size: 18px; line-height: 26px; margin-bottom: 20px; font-weight: 200;}
+
+        ul { padding-left: 10px;
+            li { list-style: none; display: flex; align-items: flex-start; font-size: 18px; padding-bottom: 20px; margin: 0;
+                &:before { content: "\f120"; font-family: "Ionicons"; margin-right: 15px;}
+            }
+        }
+
+        &.lightgrey { background: $lightgrey;}
+        &.blue { background: $primary;}
+        &.darkblue { background: $tertiary;}
+
+        &.blue,
+        &.darkblue {
+            h1, h2, h3, h4, h5, h6 { color: #fff}
+            p, li { font-size: 20px; line-height: 28px; font-weight: 400; color: #fff;}
+        }
+    }
+}

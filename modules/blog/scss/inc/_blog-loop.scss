@@ -1,0 +1,120 @@
+/**
+ * Blog Loop
+ *
+ * Styles for the blog loop
+ *
+ * @package Blog
+ * @version 1.0
+*/
+
+article.blog__article { 
+
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-bottom: 1px $border solid;
+    padding: 20px 20px 40px 0;
+
+    &:last-of-type { border-bottom: none;}
+
+    @include breakpoint(brotherbear) { 
+        flex-direction: column;
+    }
+
+    .blog__content {
+        width: 50%;
+        padding: 40px 60px 20px 20px;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(brotherbear) { 
+            width: 100%;
+            padding: 20px 0 40px;
+        }
+
+        h5 { font-size: 13px; font-weight: 500; color:$secondary; padding:0 0 10px; text-transform: uppercase; letter-spacing: 1px;}
+        
+        h2 { font-size: 32px; text-transform: none; color: $primary; position: relative; margin: 0; font-weight: 900; line-height: 35px;
+            a { color: $primary;
+                &:hover { color: lighten($primary, 20%);}
+            }
+        }
+
+        p { 
+            font-size: 17px;
+            line-height: 29px;
+            margin-bottom: 30px;
+        }
+
+        date { 
+            color: $text;
+            font-weight: 900;
+            margin: 20px 0;
+            display: block;
+        }
+
+        .blog__more { 
+            margin-top: auto;
+            
+            a {
+                color: $secondary;
+
+                i {
+                    font-size: 13px;
+                    transition: all .3s ease; 
+                    transform: translateX(0);
+                }
+
+                &:hover { 
+                    color: lighten($secondary, 5%);
+                    i {
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+
+    .blog__img { 
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 360px;
+        border-radius: 5px;
+        border: 1px $border solid;
+
+        @include breakpoint(brotherbear) { 
+            width: 100%;
+            min-height: 260px;
+        }
+
+        &:hover { 
+            opacity: 0.6;
+        }
+    }
+
+    &.blog__featured {
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(darken($primary, 15%), 0.1);
+        border-bottom: none;
+        border-radius: 5px;
+    }
+
+    &.preloader {
+        .blog__content {
+            h5 { @extend .is-loading; height: 19px; width: 21%}
+            h2 { @extend .is-loading; height: 28px; width: 60%}
+            date { @extend .is-loading; height: 17px; width: 19%}
+            
+            p { @extend .is-loading; height: 19px; width: 100%; margin-bottom: 3px;}
+            p.p2 { width: 70%;}
+            p.p3 { width: 40%; margin-bottom: 30px}
+
+            .blog__more { @extend .is-loading; height: 17px; width: 15%;}
+        }
+
+        figure { @extend .is-loading; width: 50%; min-height: 360px; border-radius: 5px;}
+    }
+}

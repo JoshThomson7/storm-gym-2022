@@ -1,0 +1,101 @@
+{
+    "key": "group_569f9361c3998",
+    "title": "Review",
+    "fields": [
+        {
+            "key": "field_569f9468edf51",
+            "label": "Rating",
+            "name": "review_rating",
+            "type": "button_group",
+            "instructions": "Select the number of stars.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "<span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span>",
+                "2": "<span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span>",
+                "3": "<span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span>",
+                "4": "<span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span>",
+                "5": "<span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span><span class=\"dashicons-before dashicons-star-filled\" style=\"color:#fcdc48;\"><\/span>"
+            },
+            "allow_null": 0,
+            "default_value": 5,
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_569f938fe8fa4",
+            "label": "Name",
+            "name": "review_name",
+            "type": "text",
+            "instructions": "The name of the person who wrote it.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_569f937be8fa3",
+            "label": "Quote",
+            "name": "review_quote",
+            "type": "textarea",
+            "instructions": "What they said.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "testimonial"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1625241718
+}

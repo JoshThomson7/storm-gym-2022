@@ -1,0 +1,61 @@
+/**
+ * APM Locations
+ * SCSS
+ */
+
+.apm__locations { padding: 20px 0; min-height: 600px;
+
+    // Map
+    &__map { width: 100%; background: $lightgrey; position: relative; overflow: hidden;
+        #apm_locations_map { width: 100%; height: 400px; transition: height .3s ease;
+            @media screen and ( max-height: 768px ) { height: 340px; transition: height .3s ease;}
+            &.preloader { @extend .is-loading;}
+        }
+
+        // Infowindow
+        #infowindow { position:absolute; z-index:10; background: #fff; top: 10px; box-shadow:-4px, 0, 10px, rgba(0, 0, 0, 0.1); width:300px; transition:all, .4s, ease-in-out; visibility: hidden; opacity: 0; transition:all .4s ease;
+
+            @include breakpoint(mamabear) { width: 75%; height:auto; border-bottom:1px solid $lightgrey; box-shadow:0, 0, 0, rgba(0, 0, 0, 0);}
+
+            &.open { right: 10px; visibility: visible; opacity: 1; transition:all .4s ease;
+                @include breakpoint(mamabear) { top: 60px;}
+            }
+            &.closed { right:-100%;}
+
+            .infowindow { padding: 20px; position:relative;
+
+                .infowindow-close { position: absolute; right: 10px; top: 10px;
+    
+                    i { color: $text; font-size:25px;}
+        
+                    &:hover { 
+                        i { color: lighten($text, 10%);}
+                    }
+                }
+        
+                h3 { font-size: 15px; margin-bottom: 15px; color:$text; position:relative;
+                    @include breakpoint(mamabear) { padding:5px 0; font-size:13px;}
+            
+                    a { color: $text; font-size: 20px; font-weight: 700;
+                        @include breakpoint(mamabear) { font-size:20px;}
+                    }
+                }
+            
+                .infowindow__content {
+
+                    p { color:$text; line-height: 20px; margin: 0 0 10px; font-size: 13px;
+            
+                        &.infowindow__content__name-mobile { display:none;
+                            @include breakpoint(mamabear) { display:block; font-size:12px; line-height:15px; @include text-truncate;}
+                        }
+                    }
+                }
+            
+                .button { font-family: $primaryFont; font-size: 15px; justify-content: center; padding: 8px 10px; margin-top: 20px;
+                    &:hover { background: lighten($primary, 3%);}
+                }
+            
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+/**
+ * APM Cards
+ * SCSS
+ */
+.apm__cards { display: flex; flex-wrap: wrap; margin: -10px;
+    article { width: percentage(1/3); display: flex;
+        @include breakpoint(brotherbear){width: 50%;}
+        @include breakpoint(teenbear){width: 100%;}
+
+        .card__inner { border: 1px $borderDark solid; padding: 30px; color: $text; margin: 10px; display: flex; flex-direction: column; flex: 1;
+            @include breakpoint(teenbear){ padding: 20px;}
+
+            h3 { font-size: 25px; font-weight: bold; margin-bottom: 10px;}
+            p { font-size: 13px; line-height: 23px; color: $text;}
+
+            small { margin-top: 15px;
+                &.distance { display: flex; align-items: center; font-size: 13px; font-weight: 700; color: $primary;
+                    i { margin-right: 5px; font-size: 10px;}
+                }
+            }
+
+            &:hover { background: $secondary; border: 1px $secondary solid;}
+
+            &.service {
+                h3 { font-size: 17px; margin-bottom: 0;}
+            }
+        }
+
+        &.preloader {
+            .card__inner { border: 1px darken($lightgrey, 5%) solid;
+                h3 { height: 17px; @extend .is-loading; width: 70%; margin-bottom: 20px;}
+                p { height: 10px; @extend .is-loading; margin-bottom: 10px;
+                    &:first-of-type { width: 50%;}
+                    &:nth-of-type(2n) { width: 30%;}
+                    &:nth-of-type(3n) { width: 40%;}
+                    &:last-child { width: 15%;}
+                }
+
+                &:hover { background: none; border: 1px darken($lightgrey, 5%) solid;}
+
+                &.service {
+                    h3 { margin-bottom: 0;}
+                }
+            }
+        }
+    }
+}

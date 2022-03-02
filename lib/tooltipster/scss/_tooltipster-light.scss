@@ -1,0 +1,16 @@
+.tooltipster-light { max-width: 380px !important; width: 100% !important;
+    .tooltipster-box { border-radius: 4px; border: none; background: #fff;}
+
+    &.tooltipster-top {
+        .tooltipster-box { margin-bottom:7px}
+    }
+
+    .tooltipster-content { width: 100%; font-weight:500; font-size:12px; color:#fff; padding: 8px 16px; line-height:16px; @include dontbreak(); box-shadow: 0 0 8px 0px rgba(black,0.2);}
+
+    .tooltipster-arrow-background { display:none}
+
+    &.tooltipster-bottom .tooltipster-arrow-border { border-bottom-color: #fff;}
+    &.tooltipster-left .tooltipster-arrow-border { border-left-color: #fff;}
+    &.tooltipster-right .tooltipster-arrow-border { border-right-color: #fff;}
+    &.tooltipster-top .tooltipster-arrow-border { border-top-color: #fff;}
+}

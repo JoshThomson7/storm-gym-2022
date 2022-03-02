@@ -1,0 +1,22 @@
+$input-bg:           #fff !default;
+$input-color:        #999 !default;
+$input-border:       #ddd !default;
+$input-border-focus: $primary !default;
+$input-label:        $secondary !default;
+$input-error:        #ef736f !default;
+$input-shadow:       1px 1px 2px #eee inset !default;
+$input-transition:   all .3s ease-in-out !default;
+
+$form-button-background:       $primary !default;
+$form-button-background-hover: #0078e7 !default;
+$form-button-color:            #fff !default;
+
+$form-required: #f00 !default;
+$form-muted:    #858585 !default;
+
+$form-font-size:   16px !default;
+$form-line-height: $form-font-size * 1.5 !default;
+$form-space:       $form-line-height / 2 !default;
+
+$white: #fff !default;
+$gray:  #aaa !default;

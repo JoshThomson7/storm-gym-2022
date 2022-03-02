@@ -1,0 +1,94 @@
+/**
+ * APT Workouts
+ * SCSS
+ */
+.apt-workouts { 
+    .apt-workouts--venue {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        aside { 
+            width: 20%;
+        }
+
+        .apt-workouts--stage {
+            flex: 1;
+            padding: 20px;
+
+            .workout {
+                .card__inner {
+                    overflow: hidden;
+                }
+                
+                figure { 
+                    height: 200px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &--info {
+                    h2 { 
+                        font-size: 19px;
+                        font-weight: 800;
+                        color: $tertiary;
+                        a { 
+                            color: $tertiary;
+                            &:hover {
+                                color: $primary;
+                             }
+                        }
+                    }
+
+                    ul {
+                        margin: 10px 0;
+
+                        li {
+                            display: flex;
+                            color: $tertiary;
+                            font-size: 14px;
+                            padding: 10px 0;
+
+                            i { 
+                                min-width: 25px;
+                                font-size: 19px;
+                                color: $primary;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+
+                &.preload { 
+                    figure { @extend .is-loading;}
+                    h2 { height: 20px; @extend .is-loading; width: 70%;}
+                    ul { 
+                        margin: 20px 0;
+                        li { 
+                            height: 10px; @extend .is-loading; padding: 0; width: 30%;
+                            margin-bottom: 8px;
+                            &:first-child { width: 60%;}
+                            &:last-child { width: 40%;}
+                        }
+                    }
+                }
+            }
+
+            .apt-workouts--not-found {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                flex: 1 0 100%;
+                width: 100%;
+                padding: 60px;
+                font-size: 18px;
+
+                i { font-size: 60px; margin-bottom: 20px; color: $primary;}
+                h2 { font-size: 21px; font-weight: 900; color: $text; margin-bottom: 10px;}
+                p { font-size: 15px;}
+            }
+        }
+    }
+}

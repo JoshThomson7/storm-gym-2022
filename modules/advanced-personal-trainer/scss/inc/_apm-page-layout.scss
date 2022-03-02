@@ -1,0 +1,55 @@
+/**
+ * APM Global Layout
+ */
+
+.apm__content--top-nav { margin-top: 30px; display: flex; justify-content: space-between;
+    a { color: $borderDark; text-transform: uppercase; display: inline-block; margin-bottom: 20px; font-size: 14px; font-weight: 700; letter-spacing: 0.5px;
+        &:hover { color: $primary;}
+    }
+}
+
+.apm__content--with-sidebar { display: flex; justify-content: space-between; margin-top: 20px;
+    @include breakpoint(brotherbear) { flex-direction: column;}
+
+    .apm__content--content { width: 70%; padding-right: 10%;
+        @include breakpoint(brotherbear) { width: 100%; padding-right: 0;}
+
+        .flexible__content {
+            .max__width {
+                padding: 0;
+            }
+        }
+
+    }
+
+    .apm__content--sidebar { max-width: 520px; flex: 1;
+
+        @include breakpoint(brotherbear) { max-width: 100%; width: 100%; padding: 40px 0 0; display: flex; flex-direction: column;}
+
+        article { padding:0 0 0 20px; clear:both; width: 100%;
+
+            @include breakpoint(brotherbear) { padding: 0 0 40px; width: 100%}
+            @include breakpoint(teenbear) { width: 100%; padding-left: 0;}
+
+            &.grey-box {
+                padding: 40px 30px; background: $lightgrey; margin-bottom: 20px;
+
+                h4 { font-size: 15px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 20px; text-transform: uppercase;}
+                p { font-size: 14px; line-height: 23px; margin-bottom: 20px;
+                    &:last-of-type { margin-bottom: 0;}
+                }
+            }
+        }
+
+    }
+
+    &.two-col { 
+        .apm__content--content { width: 50%; padding-right: 5%;
+            @include breakpoint(brotherbear) { width: 100%; padding-right: 0;}
+        }
+        .apm__content--sidebar { width: 50%; max-width: 100%; flex: auto; padding-left: 5%;
+            @include breakpoint(brotherbear) { width: 100%; padding-left: 0;}
+        }
+    }
+
+}

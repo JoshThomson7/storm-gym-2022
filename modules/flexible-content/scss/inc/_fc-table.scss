@@ -1,0 +1,47 @@
+/*
+----------------------------
+  ______      __    __
+ /_  __/___ _/ /_  / /__
+  / / / __ `/ __ \/ / _ \
+ / / / /_/ / /_/ / /  __/
+/_/  \__,_/_.___/_/\___/
+
+---------------------------
+Table
+*/
+
+.fc_table {
+    &.grey {
+        table {
+            tbody {
+                tr:nth-child(even) { background-color:darken($lightgrey, 3%);}
+            }
+        }
+    }
+
+    table { width:100%;
+        thead {
+            @include breakpoint(mamabear) { display: none;}
+            th { color: $text; padding:10px; text-align:left; font-size:16px; font-weight: 700; border-bottom: 1px $border solid;}
+        }
+
+        tbody {
+            tr:nth-child(odd){ background-color:#fff;
+                @include breakpoint(mamabear) { background: none;}
+            }
+
+            tr:nth-child(even) { background-color: lighten($lightgrey, 1%);
+                @include breakpoint(mamabear) { background: none;}
+            }
+
+            td { color:inherit; padding:10px; text-align:left; font-size:14px; line-height:20px; border-right:1px $border solid; border-bottom:1px $border solid;
+                @include breakpoint(mamabear) { width: 100%; display: block;
+                    &:nth-child(even) { background-color:lighten($lightgrey, 1%);}
+                    &:before { content: attr(data-th); width: 100%; display: block; padding: 10px 0; color:$primary; font-size: 18px; font-weight: 700;}
+                }
+
+                &:last-child { border-right:none;}
+            }
+        }
+    }
+}

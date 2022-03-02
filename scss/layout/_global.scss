@@ -1,0 +1,120 @@
+/*
+ * Global
+ *
+*/
+body {
+    font-family: $primaryFont;
+    font-size: $baseFontSize;
+    font-weight: 500;
+    color: $text;
+    overflow-x: hidden;
+
+    &.no__scroll { overflow: hidden; }
+
+    &.admin-bar {
+        header.header { top: 32px; }
+    }
+}
+
+#page { display: flex; flex-direction: column; background: #fff;
+    &.sticky { padding-top: 100px; }
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: $primaryFont; }
+
+a { transition: all .3s ease;
+    &:hover { transition: all .3s ease; }
+}
+
+img { max-width: 100%; width: auto\9; height: auto; vertical-align: middle; border: 0; -ms-interpolation-mode: bicubic; }
+
+.max__width { max-width: 1400px; margin: 0 auto; width: 100%; padding: 0 20px; 
+    @include breakpoint(cousinbear){
+        padding: 0 20px;
+    }
+}
+
+.do__flex { display: flex; flex-wrap: wrap; }
+.hide { display: none; }
+
+/*
+ * GDPR Cookie Consent Banner
+ * @see https://en-gb.wordpress.org/plugins/uk-cookie-consent/
+*/
+#catapult-cookie-bar { width: 345px !important; bottom: 20px !important;
+    h3 { font-weight: 800; font-size: 18px;}
+    span { line-height: 20px; font-size: 14px;}
+    a { display: block; margin-top: 5px; font-weight: 500;}
+    button#catapultCookie { font-family: $primaryFont; font-size: 14px; font-weight: 700; text-transform: uppercase; padding: 7px 20px 7px !important; transition: all .3s ease; border-radius: 0;
+        &:hover { background: #fff; transition: all .3s ease; color: $text;}
+    }
+}
+
+/**
+ * Tooltips
+**/
+.tooltipster-template { display: none;
+    &.align-right { 
+        .tooltipster-content { text-align: right;}
+    }
+}
+
+.tooltip_templates { display: none; }
+
+/**
+ * Loaders
+**/
+.wp__loading { display: none; width: 20px; margin: 0 auto;
+    &.is__loading { display: block; }
+}
+
+.blazy { transition: opacity 500ms ease-in-out; max-width: 100%; opacity: 0;
+    &.b-loaded { opacity: 1; }
+}
+
+/**
+ * Buttons
+ */
+.button {
+    font-family: $primaryFont;
+    font-weight: 800;
+    font-size: 19px;
+    padding: 15px 35px 13px;
+    display: flex;
+    transform: all .3s ease;
+    box-shadow: none;
+    transform: scale3d(1, 1, 1);
+    text-align: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    line-height: normal;
+    transition: all .3s ease;
+
+    @include breakpoint(teenbear) { padding: 12px 20px 10px; }
+
+    &:hover { transition: all .3s ease; transform: scale3d(1.02, 1.02, 1.02); }
+
+    &.small { font-size: 12px; padding: 4px 15px;
+        &:hover { box-shadow: 0 0 5px lighten($primary, 15%); }
+    }
+
+    &.medium { font-size: 15px; padding: 11px 23px;
+        &:hover { box-shadow: 0 0 5px lighten($primary, 15%); }
+    }
+
+    &.primary { background: $primary; color: #fff;
+        &:hover { background: lighten($primary, 5%);}
+    }
+    &.secondary { background: $secondary; color: #fff; border: none;
+        &:hover { background: lighten($secondary, 5%);}
+    }
+    &.tertiary { background: $tertiary; color: #fff; border: none;
+        &:hover { background: lighten($tertiary, 5%);}
+    }
+}
+
+@import '404';
+@import 'search-results';
+@import 'pagination';
+@import 'cards';

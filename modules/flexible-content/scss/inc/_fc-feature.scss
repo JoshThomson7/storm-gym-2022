@@ -1,0 +1,100 @@
+/*
+--------------------------------------------
+    ______           __
+   / ____/__  ____ _/ /___  __________
+  / /_  / _ \/ __ `/ __/ / / / ___/ _ \
+ / __/ /  __/ /_/ / /_/ /_/ / /  /  __/
+/_/    \___/\__,_/\__/\__,_/_/   \___/
+
+-------------------------------------------
+Feature
+*/
+.fc_feature {
+    // @include breakpoint(brotherbear) { padding-left: 10px !important; padding-right: 10px !important;}
+
+    .fc_feature_wrapper { display:flex; flex-wrap:wrap; align-items: center; position: relative;
+
+        @include breakpoint(brotherbear) { flex-direction: column;}
+
+        .feature__text { width:percentage(1/2);
+            @include breakpoint(brotherbear) { width: 100%!important;}
+        }
+
+        .feature__image { position:relative; overflow:hidden; border-right: 40px solid transparent; flex: 1;
+
+            @include breakpoint(grandmabear) { border-right: 20px solid transparent;}
+            @include breakpoint(brotherbear) { margin-bottom:20px; width:100%; border-right: none;}
+
+            a { background:rgba(0, 0, 0, 0.6); position:absolute; width:100%; height:100%; top:0; left:0; z-index:1; box-sizing:border-box; display: flex; justify-content: center; align-items: center;
+
+                figure { border-radius:100%; width:100px; height:100px; background: $primary; display:block; transition:all .4s ease; transform:scale(1); display: flex; justify-content: center; align-items: center;
+                    i { font-size: 40px; color:#fff; margin-left:9px;}
+                }
+            }
+
+            &:hover {
+                a {
+                    figure { transition:all .4s ease; transform:scale(1.2);}
+                }
+            }
+        }
+
+        .feature__text { border-left: 40px solid transparent;
+            @include breakpoint(grandmabear) { border-left: 20px solid transparent;}
+            @include breakpoint(brotherbear) { width:100%; border-left: none;}
+
+            h3 { font-weight: 800; line-height: 37px; font-size: 27px; color: $text; margin-bottom: 20px;}
+
+            h5 { font-size: 13px; font-weight: 400; margin-bottom: 0; color: $secondary; text-transform: uppercase; line-height: normal; letter-spacing: 1px;}
+
+            p { font-size: 17px; line-height: 27px; color: $textLight; margin-bottom: 15px;
+                &:last-child { margin-bottom: 0;}
+            }
+
+            .feature__action { display: flex; justify-content: flex-start; margin-top: 40px;}
+        }
+
+        &.right {
+
+            .feature__image { order:1; border-left: 40px solid transparent; border-right:none;
+
+                @include breakpoint(grandmabear) { border-left: 20px solid transparent;}
+                @include breakpoint(brotherbear) { width:100%; order:0; border-left:none;}
+
+                &.as__bg { position: absolute; right: 0; left: auto;}
+
+            }
+
+            .feature__text { border-right: 40px solid transparent; border-left:none;
+                @include breakpoint(grandmabear) { border-right: 20px solid transparent;}
+            }
+
+        }
+
+        &.fc-feature-img-expand { 
+            align-items: unset;
+
+            .feature__image { 
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 0 50px 50px 0;
+            }
+
+            .feature__text { 
+                padding: 5% 5% 5% 0;
+            }
+
+            &.right { 
+                .feature__image {
+                    border-radius: 50px 0 0 50px;
+                }
+
+                .feature__text { 
+                    padding: 5% 0 5% 5%;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,97 @@
+/**
+ * APM Clinic - Single
+ * SCSS
+ */
+
+.apm__clinic--single { padding: 10px 0 40px;
+
+    & > .max__width { display: flex; justify-content: space-between; flex-wrap: wrap;
+        @include breakpoint(papabear) { flex-direction: column;}
+    }
+    
+    &-content { width: 70%; padding-right: 60px; flex: 2;
+        @include breakpoint(papabear) { width: 100%; flex: auto; padding-right: 0;}
+
+        .max__width { padding: 0;}
+
+        //.feefo { background: $primary; padding: 20px; margin-bottom: 30px;}
+    }
+
+    aside { width: 30%; min-width: 280px;
+        @include breakpoint(papabear) { width: 100%; flex: auto;}
+
+        .button-single-location { margin-bottom: 30px; padding: 21px 35px;}
+    }
+
+    article { margin-bottom: 30px;
+        h5 { font-size: 19px; color: $primary; font-weight: 700; display: flex; justify-content: space-between; align-items: center; text-transform: uppercase;
+            figure { background: #fff; padding: 7px 15px; font-size: 14px; display: flex; justify-content: space-between; align-items: center; text-transform: none; color: $text;
+                i { color: $primary; margin-right: 10px; position: relative; top: -2px;}
+            }
+        }
+
+        p { font-size: 15px; color: $text; line-height: 25px;}
+
+        // Opening times
+        ul.opening-times { display: flex; flex-direction: column;
+            li { display: flex; justify-content: space-between; align-items: center; padding: 15px 25px 12px; border-bottom: 1px darken($border, 5%) solid; font-size: 15px; order: 1;
+                span { 
+                    &.times { color: $text;}
+                }
+
+                &.today { color: $text; font-weight: 700; position: relative;
+                    &:after { content: ""; display: block; width: 4px; height: 100%; position: absolute; left: 0; top: 0;}
+
+                    &.open {
+                        &:after { background: #6eba63;}
+                    }
+
+                    &.closed {
+                        &:after { background: tomato;}
+                    }
+
+                    &.about-to-close {
+                        &:after { background: #ffbc00;}
+                    }
+                }
+
+                &.current-status { order: 0; font-weight: 700;}
+            }
+        }
+
+        ul.fees { margin-top: 20px;
+            li { padding: 10px; display: flex; justify-content: space-between; align-items: center; font-size: 15px;
+                @include breakpoint(babybear){flex-direction: column; border: 1px solid $primary;}
+
+                &.highlight { background: #fff;}
+
+                span,
+                strong { display: block;}
+
+                span { width: 70%; padding-right: 5px;
+                    @include breakpoint(mamabear){width: 60%; padding-right: 20px;}
+                    @include breakpoint(babybear){width: 100%; padding-right: 0; border-bottom: 1px solid $tertiary; padding-bottom: 5px; text-align: center;}
+                }
+                strong { width: 30%;
+                    @include breakpoint(mamabear){width: 40%;}
+                    @include breakpoint(babybear){width: 100%; padding-top: 5px; text-align: center;}
+
+                    i { margin-left: 4px; color: $primary;}
+                }
+            }
+        }
+
+        &.phone { 
+            p { font-size: 25px; font-weight: 700;}
+        }
+
+        &.primary { background: $primary; padding: 20px;
+
+            @include breakpoint(papabear){text-align: center;}
+            p { color: #fff;}
+        }
+
+        &.secondary { background: $tertiary; padding: 20px;}
+    }
+
+}
